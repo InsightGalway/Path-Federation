@@ -1,0 +1,4 @@
+startnode=http://dbpedia.org/resource/James_K._Polk
+endnode=http://dbpedia.org/resource/Felix_Grundy
+topk=2
+expected=results/task1_q4_2.txt

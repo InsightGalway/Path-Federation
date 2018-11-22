@@ -1,0 +1,4 @@
+startnode=http://dbpedia.org/resource/1952_Winter_Olympics
+endnode=http://dbpedia.org/resource/Elliot_Richardson
+topk=3
+expected=results/task1_q2_3.txt

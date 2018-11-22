@@ -1,0 +1,4 @@
+startnode=http://dbpedia.org/resource/Felipe_Massa
+endnode=http://dbpedia.org/resource/Red_Bull
+topk=20152
+expected=results/task1_q1_20152.txt

@@ -1,0 +1,4 @@
+startnode=http://dbpedia.org/resource/Karl_W._Hofmann
+endnode=http://dbpedia.org/resource/Elliot_Richardson
+topk=36
+expected=results/task1_q3_36.txt
