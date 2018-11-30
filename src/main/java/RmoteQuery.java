@@ -31,7 +31,7 @@ public class RmoteQuery {
 		        //+ "WHERE { SERVICE<http://10.196.2.181:3030/hdtservice/query> { ?path ppfj:topk (<http://dbpedia.org/resource/c> <http://dbpedia.org/resource/b> 3) } }";
 		        + "WHERE { ?path ppfj:topk (<"+sourceNode+"> <"+targetNode+"> "+k+") . }";
 			
-		System.out.println(endpoint+"="+qry);
+		//System.out.println(endpoint+"="+qry);
 	   Query query = QueryFactory.create(qry);
 	   //query.setPrefix("feds", "http://feds-engine");
 	   

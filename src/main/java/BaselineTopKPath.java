@@ -78,6 +78,7 @@ public class BaselineTopKPath extends TopKAlgorithm implements  ModelInit{
 			}
 			TNode current = q.poll();
 			visit(current, backword);
+		
 			if (solutions.size() >= k) {
 				System.out.println("Max queue size: " + qsize);
 				break;
@@ -120,6 +121,10 @@ int count=0;
 				doNotQueue = true;
 				Path p = trace(next, new Path(Collections.singleton(targetNode)));
 				if (!reversed && !backword) {
+					// dont reverse p
+					//p.reverse();
+				
+				}else{
 					p.reverse();
 				}
 				boolean flag = false;
@@ -131,12 +136,14 @@ int count=0;
 					if (it.previousIndex() != -1) {
 						flag = connectedThrough(mainModel, arry[it.previousIndex()].toString(),
 								arry[it.nextIndex()].toString());
+						if (flag)
+							solutions.add(p);
 					}
 					it.next();
 				}
 
-				if (flag)
-					solutions.add(p);
+				//if (flag)
+					//solutions.add(p);
 			}
 
 			if (!doNotQueue) {
@@ -156,7 +163,8 @@ int count=0;
 		String query= "prefix feds: <http://vocab.org.centre.insight/feds#>"
 				+ " ASK WHERE {<" + s + ">  feds:connectedThrough ?con."
 				+ "<" + t + ">  feds:connectedThrough ?con."
-						+ "FILTER (?con!= <" + targetNode + ">)}";
+						+ "FILTER (?con!= <" + targetNode + ">)"
+								+ "}";
 
         //String askQry="ASK WHERE{{<" +s + "> ?p ?o} UNION {<" +s + "> ?p ?o}}";
 		
@@ -234,53 +242,6 @@ int count=0;
 		}
 	}
 
-
-class ProcessFederatedRequest implements Runnable{
-
-	String endpoint, source,target;
-	Path path;
-	
-	 public ProcessFederatedRequest(Path path,String endpoint, String source, String target) {
-		 System.out.println("constructor for inner class");
-		 	this.endpoint=endpoint;
-		 	this.source=source;
-		 	this.target=target;
-		 	this.path=path;
-	
-	}
-	@Override
-	public void run() {
-
-		ContentResponse res;
-		
-		HttpClient httpClient= new HttpClient();
-		
-		
-		try {
-			httpClient.start();
-			
-			res = httpClient.newRequest("http://localhost:8081").param("source", source).param("target", target).send();
-
-			System.err.println(res.getContentAsString());
-			String federatedPath= res.getContentAsString();
-			if(!federatedPath.equals("false\n\n"))
-			sourceToAllTemp.addAll(prunePath(path.toString(), federatedPath));
-			
-			System.err.println(res.getContentAsString());
-			
-			httpClient.stop();
-		} catch (InterruptedException | TimeoutException | ExecutionException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-	}
-	
-}
 
 
 }

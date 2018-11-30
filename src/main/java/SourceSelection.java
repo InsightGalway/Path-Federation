@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 
@@ -11,21 +11,22 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.insight.centre.RDFizePaths.PathRDFizer;
-
-
-import com.hp.hpl.jena.util.FileManager;
 
 public class SourceSelection {
 
@@ -47,7 +48,7 @@ public class SourceSelection {
     protected String startSourceSelection(Path pList) throws IOException, InterruptedException, ExecutionException {
 
 
-    	ExecutorService pool= Executors.newFixedThreadPool(10);
+    	ExecutorService pool= Executors.newFixedThreadPool(50);
     	
         List <?> lstOfEnpds = new ArrayList < > (pList.vertSeq);
         int count = 0;
@@ -72,20 +73,31 @@ public class SourceSelection {
 
                 String nextDataset = tempList.get(count).toString();
                 // get the nodes where two datasets are connected through
-                ResultSet connectThrougRs = mdlEndpConnectedVia(curDataset, nextDataset);
+              //  Iterator<String> connectThrougRs = nodesWithProp(mdlEndpConnectedVia(curDataset, nextDataset), curDataset).iterator();
+                ResultSet connectThrougRs= mdlEndpConnectedVia(curDataset, nextDataset);
+                Set<String> connThr= new HashSet<String>();
+               while(connectThrougRs.hasNext()){
+            	   connThr.add(connectThrougRs.next().get("?o").toString());
+               }
+                
                 List < String > pathRetrieved = new ArrayList < > ();
                 targets= new ArrayList<>();
                
                int conThSize=1;
                for(String src: Src){
-                while (connectThrougRs.hasNext()) {
-                    target = connectThrougRs.next().get("?o").toString();
-                    
+            	   System.out.println(src);
+            	   //check if source does exist in the current dataset
+            	   // if doesnt don need to make any request since no benefit of connectedThrough
+          if(checkIfExist (src, curDataset)){	   
+            	//while(connectThrougRs.hasNext()){
+            	for (String common: connThr) {
+                    target = common;;
+                	//target=connectThrougRs.next().get("?o").toString();
                     targets.add(target); // add each target to a targets List
                     
                     // get the path either from local or remote endpoints
-                    System.out.println(conThSize++);
-                    System.err.println("endpoint:="+curDataset+" source: "+ src+" targer: "+target);
+                    //System.out.println(curDataset+conThSize++);
+                  // System.err.println("endpoint:="+curDataset+" source: "+ src+" targer: "+target);
                   if(target.equals(targetNoe)){
                     if(src.equals(sourceNode)){
                     	Future<List<String>> future1= pool.submit(new PathRequest(curDataset, src, target, 2));
@@ -106,8 +118,9 @@ public class SourceSelection {
 						e.printStackTrace();
 					}
                    }
-                } // end of Src
-            }
+                } // end of connectedThrough while loop 
+              } else{continue;}
+            } // end of Src loop
                // System.out.println("size: "+ conThSize);
                // if (!map.containsKey(curDataset)) {
                     List < PathMerger > lst = new ArrayList < > ();
@@ -117,15 +130,25 @@ public class SourceSelection {
 
                 //}
                 curDataset = nextDataset;
+                //Src = !targets.isEmpty()?targets:Src;
                 Src = targets;
             } else {
 
             	List < String > pathRetrieved = new ArrayList < > ();
                 target = this.targetNoe; // original target
                for(String src: Src) { 
+  
                 List < String > pathRet = getPaths(curDataset, src, target, 2);
                 pathRetrieved.addAll(pathRet);
+
                }
+        	
+                Future<List<String>> future2= pool.submit(new PathRequest(curDataset, this.sourceNode, this.targetNoe, 2));
+                   	
+				pathRetrieved.addAll(future2.get());
+                  
+                  
+        	   
                 //if (!map.containsKey(curDataset)) {
                     List < PathMerger > lst = new ArrayList < > ();
                     LinkedList < String > set = new LinkedList < > (map.keySet());
@@ -158,6 +181,53 @@ pool.shutdown();
         return new RmoteQuery().FederateRequest(curDataset, src, target, k);
     }
 
+    protected boolean checkIfExist(String node, String endpoint){
+    /*	String qryASK = "ASK WHERE{?s ?p ?o "
+    			+ "Filter(?s = <%subj> || ?o= <%obj> ) "
+    			+ "}";
+    	qryASK=qryASK.replace("%subj", node).replace("%obj", node);*/
+     	
+    	//Query query = QueryFactory.create(qryASK);
+    	
+    	Set<String> nodeWithProp= new HashSet<>();
+    	
+    	String qry = "Select * {<%subj> ?p ?o } limit 1".replace("%subj", node);
+        
+    	
+    	QueryExecution exec= QueryExecutionFactory.sparqlService(endpoint, qry);
+    	
+    	if(exec.execSelect().hasNext())
+    	{
+    		return true;
+    	}else{
+    	 
+    	return false; 
+    	}
+    	
+    }
+    
+    
+    protected Set<String> nodesWithProp(ResultSet rest, String curDataset){
+	
+    Set<String> nodeWithProp= new HashSet<>();
+    while(rest.hasNext()){	
+    	
+    	String nodeCheck= rest.next().get("?o").toString();
+    	
+    	String qry = "Select * {<%subj> ?p ?o } limit 1".replace("%subj",nodeCheck );
+    	 QueryExecution qryExec = QueryExecutionFactory.sparqlService(curDataset,qry);
+    	 if(qryExec.execSelect().hasNext()){
+    		 nodeWithProp.add(nodeCheck);
+    	 }else{
+    		 System.err.println("no further properties...");
+    	 }
+    	 
+    }
+    	return nodeWithProp;
+    	
+    	
+    	
+    }
     /**
      * @param curDataset
      * @param nextDataset
@@ -171,11 +241,10 @@ pool.shutdown();
 
      //   modelTemp.read( in , null, "N-TRIPLE");
 
-        String query = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE { { <" +
-            curDataset + "> feds:connectedThrough ?o. <" + nextDataset + "> feds:connectedThrough ?o.} UNION {<" +
-            nextDataset + "> feds:connectedThrough ?o. <" + curDataset + "> feds:connectedThrough ?o.} }";
+    	 String query = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE { { <"+curDataset+"> feds:connectedThrough ?o. <"+nextDataset+"> feds:connectedThrough ?o.} UNION {<"+nextDataset+">feds:connectedThrough ?o. <"+curDataset+"> feds:connectedThrough ?o.} }";
 
         QueryExecution qryExec = QueryExecutionFactory.create(query, mdl);
+        
 
         return qryExec.execSelect();
 
@@ -198,7 +267,7 @@ pool.shutdown();
                     for (String path: pathBuild.pathRetrieved) {
                         if (path.endsWith(this.targetNoe)){
                             System.out.println("path from : "+pathBuild.curDataset+"="+path);
-                        savePaths("path from : "+pathBuild.curDataset+"="+path);
+                        savePaths(pathBuild.curDataset+"="+path);
                         
                         PathRDFizer.RDFizeAndSave(path, pathBuild.curDataset, pathFirstNode(path), pathLastNode(path), "");
                        
@@ -220,7 +289,7 @@ pool.shutdown();
 
                             if(currentPath.startsWith(this.sourceNode) && currentPath.endsWith(this.targetNoe))
                             	{
-                            	System.out.println("single hope: "+ currentPath);
+                            	System.out.println("single hope from: "+pathBuild.curDataset+" path:="+ currentPath);
                                   savePaths(currentPath);
                                 
                                   PathRDFizer.RDFizeAndSave(currentPath, pathBuild.curDataset, pathFirstNode(currentPath), pathLastNode(currentPath), "");
@@ -230,7 +299,12 @@ pool.shutdown();
                             for (String previousPath: map.get(prevDataset).get(i).pathRetrieved) { 
                                 if (!currentPath.endsWith(this.targetNoe) && !previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath))) {
                                 
-                                	pathBuild.pathRetrieved.set(i, previousPath.concat("----").concat(currentPath));
+                                	String concate= previousPath.concat("----").concat(currentPath);
+                                	System.out.println(concate);
+                                	System.err.println(pathBuild.pathRetrieved.indexOf(currentPath));
+                                	System.out.println(pathBuild.pathRetrieved.get(pathBuild.pathRetrieved.indexOf(currentPath)));
+                                	//concate+=previousPath.concat("----").concat(currentPath);
+                                	pathBuild.pathRetrieved.set(pathBuild.pathRetrieved.indexOf(currentPath), concate);
                                 	dtsContributed.add(prevDataset);
                                 	dtsContributed.add(pathBuild.curDataset);
                                 	
@@ -241,7 +315,7 @@ pool.shutdown();
                                 	
                                   
 									String p="";
-									if (!previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath)) && currentPath.endsWith(this.targetNoe))
+									if (previousPath.startsWith(this.sourceNode) &&!previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath)) && currentPath.endsWith(this.targetNoe))
 									{p =previousPath.concat("----").concat(currentPath);
                                     
 										System.out.println(p);
@@ -268,6 +342,27 @@ pool.shutdown();
 
     } // end of buildPath Function
 
+    private String getSingleHopPath(String endp, String S, String O){
+    	
+    	String qryStr= "SELECT * { ?s ?p ?o. FILTER (?o=<"+O+"> || ?s=<"+O+"> )}";
+    	
+    	Query qry= QueryFactory.create(qryStr);
+    	
+    	QueryExecution exec= QueryExecutionFactory.sparqlService(endp, qry);
+    	 String spo = null;
+    	 
+    	 ResultSet res= exec.execSelect();
+    	 
+    	while(res.hasNext()){
+    		 QuerySolution sol = res.next();
+    		 
+    		spo= sol.get("?s").toString().concat(sol.get("?p").toString()).concat(sol.get("?o").toString());
+    	}
+    	
+    	return spo;
+    }
+    
+    
     private String pathLastNode(String path){
     	
     	return path.substring(path.lastIndexOf(">-") + 2);
@@ -323,7 +418,7 @@ pool.shutdown();
 
 		@Override
 		public List<String> call() throws Exception {
-			Thread.sleep(10);
+			Thread.sleep(5);
 			return getPaths(this.curDataset, this.src, this.target,this.topK);
 		}
 
