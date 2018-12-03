@@ -3,6 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -85,7 +86,7 @@ public class SourceSelection {
                
                int conThSize=1;
                for(String src: Src){
-            	   System.out.println(src);
+            	  // System.out.println(src);
             	   //check if source does exist in the current dataset
             	   // if doesnt don need to make any request since no benefit of connectedThrough
           if(checkIfExist (src, curDataset)){	   
@@ -267,9 +268,12 @@ pool.shutdown();
                     for (String path: pathBuild.pathRetrieved) {
                         if (path.endsWith(this.targetNoe)){
                             System.out.println("path from : "+pathBuild.curDataset+"="+path);
-                        savePaths(pathBuild.curDataset+"="+path);
-                        
-                        PathRDFizer.RDFizeAndSave(path, pathBuild.curDataset, pathFirstNode(path), pathLastNode(path), "");
+                            savePaths(path);
+                           
+                            Map<String, String> fPaths= new HashMap<>();
+                            fPaths.put(pathBuild.curDataset, path);
+                            
+                        PathRDFizer.RDFizeAndSave(path, fPaths, pathFirstNode(path), pathLastNode(path), true);
                        
                         
                         }
@@ -289,28 +293,33 @@ pool.shutdown();
 
                             if(currentPath.startsWith(this.sourceNode) && currentPath.endsWith(this.targetNoe))
                             	{
-                            	System.out.println("single hope from: "+pathBuild.curDataset+" path:="+ currentPath);
+                            	//System.out.println("single hope from: "+pathBuild.curDataset+" path:="+ currentPath);
                                   savePaths(currentPath);
                                 
-                                  PathRDFizer.RDFizeAndSave(currentPath, pathBuild.curDataset, pathFirstNode(currentPath), pathLastNode(currentPath), "");
+                                  Map<String, String> fPaths= new HashMap<>();
+                                  fPaths.put(pathBuild.curDataset, currentPath);
+                                  
+                                  PathRDFizer.RDFizeAndSave(currentPath, fPaths, pathFirstNode(currentPath), pathLastNode(currentPath),true);
                                   
                             	}
                             
                             for (String previousPath: map.get(prevDataset).get(i).pathRetrieved) { 
                                 if (!currentPath.endsWith(this.targetNoe) && !previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath))) {
                                 
-                                	String concate= previousPath.concat("----").concat(currentPath);
-                                	System.out.println(concate);
-                                	System.err.println(pathBuild.pathRetrieved.indexOf(currentPath));
-                                	System.out.println(pathBuild.pathRetrieved.get(pathBuild.pathRetrieved.indexOf(currentPath)));
-                                	//concate+=previousPath.concat("----").concat(currentPath);
-                                	pathBuild.pathRetrieved.set(pathBuild.pathRetrieved.indexOf(currentPath), concate);
-                                	dtsContributed.add(prevDataset);
-                                	dtsContributed.add(pathBuild.curDataset);
+                                	Map<String, String> pPaths= new HashMap<>();
                                 	
-                                	PathRDFizer.RDFizeAndSave(previousPath, prevDataset,pathLastNode(previousPath),pathFirstNode(previousPath), 
-                                			currentPath, pathBuild.curDataset, pathFirstNode(currentPath), pathLastNode(currentPath));
-
+                                	String concate= previousPath.concat("----").concat(currentPath);
+                                	//System.out.println(concate);
+                                	//System.err.println(pathBuild.pathRetrieved.indexOf(currentPath));
+                                	//System.out.println(pathBuild.pathRetrieved.get(pathBuild.pathRetrieved.indexOf(currentPath)));
+                                
+                                	pathBuild.pathRetrieved.set(pathBuild.pathRetrieved.indexOf(currentPath), concate);
+                                
+                                	pPaths.put(prevDataset, previousPath);
+                                	pPaths.put(pathBuild.curDataset, currentPath);
+                             
+                                	PathRDFizer.RDFizeAndSave(concate, pPaths,pathFirstNode(concate), pathLastNode(concate),false);
+                        
                                 } else {
                                 	
                                   
@@ -318,11 +327,15 @@ pool.shutdown();
 									if (previousPath.startsWith(this.sourceNode) &&!previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath)) && currentPath.endsWith(this.targetNoe))
 									{p =previousPath.concat("----").concat(currentPath);
                                     
+									Map<String, String> pPaths= new HashMap<>();
+									
 										System.out.println(p);
 										savePaths(p.toString());
-										dtsContributed.add(pathBuild.curDataset);
+										pPaths.put(prevDataset, previousPath);
+										pPaths.put(pathBuild.curDataset, currentPath);
 										
-										PathRDFizer.RDFizeAndSave(p, dtsContributed, pathFirstNode(p), pathLastNode(p), "");
+										
+										PathRDFizer.RDFizeAndSave(p, pPaths, pathFirstNode(p), pathLastNode(p),true);
 									
 										
 									}

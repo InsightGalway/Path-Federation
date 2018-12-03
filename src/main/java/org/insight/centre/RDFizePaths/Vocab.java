@@ -23,9 +23,16 @@ public class Vocab {
     public static final Property retrievedFrom = m_model.createProperty( NAMESPACE+"retrievedFrom" );
     public static final Property startNode = m_model.createProperty( NAMESPACE+"startNode" );
     public static final Property endNode = m_model.createProperty( NAMESPACE+"endNode" );
+    public static final Property partialPathInvolved = m_model.createProperty( NAMESPACE+"partialPathInvolved" );
     
-    public static final Resource FullPath = m_model.createResource( NAMESPACE+"FullPath" );
-    public static final Resource PartialPath = m_model.createResource( NAMESPACE+"PartialPath" );
+    public static final Property fullPath = m_model.createProperty( NAMESPACE+"fullPath" );
+    public static final Property fullPathHops = m_model.createProperty( NAMESPACE+"fullPathHops" );
+    public static final Property partialPathHops = m_model.createProperty( NAMESPACE+"partialPathHops" );
+    public static final Property partialPath = m_model.createProperty( NAMESPACE+"partialPath" );
+    
+    
+    public static final Resource Path = m_model.createResource( NAMESPACE+"FullPath" );
+    
  
     /** <p>RDFS namespace</p> */ 
     public static final Property RDFS = m_model.createProperty("http://www.w3.org/2000/01/rdf-schema#label");

@@ -83,9 +83,13 @@ public class StartTopK {
         involvedEndp.add(new Endpoint("http://localhost:3020/do/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://localhost:3023/hpo/query", "http://d1.graph.sample"));
         
+        involvedEndp.add(new Endpoint("http://localhost:3024/gene/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3025/protein/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3026/variant/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3027/panther/query", "http://d1.graph.sample"));
         
        
-  /*      involvedEndp.add(new Endpoint("http://10.196.2.224:3001/disease/query", "http://d4.graph.sample"));
+  /*    involvedEndp.add(new Endpoint("http://10.196.2.224:3001/disease/query", "http://d4.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3002/do/query","http://d3.graph.sample"));
         //involvedEndp.add(new Endpoint("http://10.196.2.224:3003/gene/query","http://d3.graph.sample"));
        // involvedEndp.add(new Endpoint("http://10.196.2.224:3004/genesymbol/query","http://d3.graph.sample"));
@@ -157,7 +161,7 @@ public class StartTopK {
         */
         
       /* 
-       * working
+       * working for only hpo dataset
        *  String source="http://purl.obolibrary.org/obo/HP_0000818"; 
         String target= "http://semanticscience.org/resource/SIO_000275";
     */    
@@ -213,8 +217,38 @@ public class StartTopK {
         String target="http://bio2rdf.org/umls:C4025823";*/
         
         
-        String source="http://purl.obolibrary.org/obo/HP_0000818"; 
-        String target="http://bio2rdf.org/umls:C4025823";
+   /* works for variant dataset  1 hop
+    * String source="http://identifiers.org/dbsnp/rs769022521"; 
+     String target="http://identifiers.org/ncbigene/10128";*/
+        
+        
+      /* variant and protein 
+       * String source="http://identifiers.org/dbsnp/rs769022521"; 
+        String target="http://identifiers.org/uniprot/P42704";*/
+        
+        
+     /* works for variant and gene
+      * String source="http://identifiers.org/dbsnp/rs769022521"; 
+     String target="http://monarchinitiative.org/gene/NCBIGene:10128";*/
+        
+        
+       /* work for variant protein and panther
+        * String source="http://identifiers.org/dbsnp/rs769022521"; 
+        String target="http://rdf.disgenet.org/resource/panther.classification/PC00137";*/
+        
+        
+      /* work for variant protien and panther 4 hops
+       *  String source="http://identifiers.org/dbsnp/rs769022521"; 
+        String target="http://semanticscience.org/resource/SIO_000275";*/
+        
+   /* work for variant protien and panther 4 hops  
+    *  String source="http://identifiers.org/dbsnp/rs769022521"; 
+       String target="http://rdf.disgenet.org/v5.0.0/void/pantherClass";*/
+        
+        
+        String source="http://purl.obolibrary.org/obo/HP_0000193"; 
+        String target="http://linkedlifedata.com/resource/umls/id/C0266122";
+        
         
         	
        _log.info("source and target");
