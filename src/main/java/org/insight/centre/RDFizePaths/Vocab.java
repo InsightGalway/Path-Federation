@@ -20,7 +20,7 @@ public class Vocab {
     /** <p>The namespace of the vocabulary as a resource</p> */
     public static final Resource NAMESPACE = m_model.createResource( NS );
     
-    public static final Property retrievedFrom = m_model.createProperty( NAMESPACE+"retrievedFrom" );
+    public static final Property endpInvolved = m_model.createProperty( NAMESPACE+"endpInvolved" );
     public static final Property startNode = m_model.createProperty( NAMESPACE+"startNode" );
     public static final Property endNode = m_model.createProperty( NAMESPACE+"endNode" );
     public static final Property partialPathInvolved = m_model.createProperty( NAMESPACE+"partialPathInvolved" );
@@ -31,7 +31,7 @@ public class Vocab {
     public static final Property partialPath = m_model.createProperty( NAMESPACE+"partialPath" );
     
     
-    public static final Resource Path = m_model.createResource( NAMESPACE+"FullPath" );
+    public static final Resource Path = m_model.createResource( NAMESPACE+"Path" );
     
  
     /** <p>RDFS namespace</p> */ 

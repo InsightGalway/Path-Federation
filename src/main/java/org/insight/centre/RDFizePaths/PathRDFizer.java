@@ -11,7 +11,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Resource;
 
-import com.hp.hpl.jena.shared.uuid.JenaUUID;
+import org.apache.jena.shared.uuid.JenaUUID;
 
 
 public class PathRDFizer {
@@ -41,10 +41,10 @@ protected static String rmvBrkt(String path){
 }
 
 
-public static void RDFizeAndSave(String path, Map<String, String> dtsContributed, String startNode, String endNode, boolean fpath) {
+public static void RDFizeAndSave(JenaUUID uuid, String path, Map<String, String> dtsContributed, String startNode, String endNode, boolean fpath) {
 
 	
-	JenaUUID uuid = JenaUUID.generate();
+	//JenaUUID uuid = JenaUUID.generate();
 	String fullPath= "FullPath:"+uuid.toString();
 	
 	
@@ -62,11 +62,11 @@ if(fpath){
 	for(Map.Entry<String, String> pPaths: dtsContributed.entrySet()){
 		
 		//datsets contributed in full path
-		pathResource.addProperty(Vocab.retrievedFrom, mdl.createResource(pPaths.getKey()));
+		pathResource.addProperty(Vocab.endpInvolved, mdl.createResource(pPaths.getKey()));
 	if(dtsContributed.size()>1){	
 		// each partial path contributed to involved datasets
 		pathResource.addProperty(Vocab.partialPathInvolved, mdl.createResource(rmvBrkt(pPaths.getValue()))
-				.addProperty(Vocab.retrievedFrom, mdl.createResource(pPaths.getKey()))
+				.addProperty(Vocab.endpInvolved, mdl.createResource(pPaths.getKey()))
 				.addProperty(Vocab.startNode, mdl.createResource(pathFirstNode(pPaths.getValue())))
 				.addProperty(Vocab.endNode, mdl.createResource(pathLastNode(pPaths.getValue())))
 				.addProperty(Vocab.partialPathHops, mdl.createTypedLiteral(new Integer(countHops(rmvBrkt(pPaths.getValue())))))
@@ -81,8 +81,11 @@ if(fpath){
 }
 	else{
 		
-		Resource pPathResource = mdl.createResource(path);
-		pPathResource=mdl.createResource(path,Vocab.Path);
+	
+		String PartialPath= "FullPath:"+uuid.toString();
+		
+		Resource pPathResource = mdl.createResource(PartialPath);
+		pPathResource=mdl.createResource(PartialPath,Vocab.Path);
 		
 		pPathResource.addProperty(Vocab.partialPath, mdl.createTypedLiteral(new String(path )));
 		pPathResource.addProperty(Vocab.startNode, mdl.createResource(startNode));
@@ -93,11 +96,11 @@ if(fpath){
 		for(Map.Entry<String, String> pPaths: dtsContributed.entrySet()){
 			
 			//datsets contributed in full path
-			pPathResource.addProperty(Vocab.retrievedFrom, mdl.createResource(pPaths.getKey()));
+			pPathResource.addProperty(Vocab.endpInvolved, mdl.createResource(pPaths.getKey()));
 			
 			// each partial path contributed to involved datasets
 			pPathResource.addProperty(Vocab.partialPathInvolved, mdl.createResource(rmvBrkt(pPaths.getValue()))
-					.addProperty(Vocab.retrievedFrom, mdl.createResource(pPaths.getKey()))
+					.addProperty(Vocab.endpInvolved, mdl.createResource(pPaths.getKey()))
 					.addProperty(Vocab.startNode, mdl.createResource(pathFirstNode(pPaths.getValue())))
 					.addProperty(Vocab.endNode, mdl.createResource(pathLastNode(pPaths.getValue())))
 					.addProperty(Vocab.partialPathHops, mdl.createTypedLiteral(new Integer(countHops(rmvBrkt(pPaths.getValue())))))

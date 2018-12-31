@@ -276,3 +276,1841 @@
 30-11-2018 19:18:09 INFO  StartTopK:216 - source and target
 30-11-2018 19:19:47 INFO  StartTopK:216 - source and target
 30-11-2018 19:22:13 INFO  StartTopK:219 - source and target
+01-12-2018 15:52:55 INFO  StartTopK:220 - source and target
+01-12-2018 15:58:10 INFO  StartTopK:220 - source and target
+01-12-2018 15:58:37 INFO  StartTopK:220 - source and target
+01-12-2018 16:11:16 INFO  StartTopK:220 - source and target
+01-12-2018 16:12:33 INFO  StartTopK:220 - source and target
+01-12-2018 16:14:12 INFO  StartTopK:220 - source and target
+01-12-2018 16:31:03 INFO  StartTopK:220 - source and target
+01-12-2018 17:16:51 INFO  StartTopK:220 - source and target
+01-12-2018 17:17:33 INFO  StartTopK:220 - source and target
+01-12-2018 17:25:37 INFO  StartTopK:220 - source and target
+01-12-2018 17:28:22 INFO  StartTopK:220 - source and target
+01-12-2018 18:25:18 INFO  StartTopK:220 - source and target
+01-12-2018 18:25:51 INFO  StartTopK:220 - source and target
+01-12-2018 18:47:59 INFO  StartTopK:220 - source and target
+03-12-2018 00:19:55 INFO  StartTopK:220 - source and target
+03-12-2018 00:21:31 INFO  StartTopK:220 - source and target
+03-12-2018 13:28:58 INFO  StartTopK:220 - source and target
+03-12-2018 13:29:36 INFO  StartTopK:220 - source and target
+03-12-2018 13:31:46 INFO  StartTopK:220 - source and target
+03-12-2018 13:38:05 INFO  StartTopK:220 - source and target
+03-12-2018 13:41:18 INFO  StartTopK:220 - source and target
+03-12-2018 13:41:24 INFO  StartTopK:220 - source and target
+03-12-2018 13:42:00 INFO  StartTopK:220 - source and target
+03-12-2018 13:42:18 INFO  StartTopK:220 - source and target
+03-12-2018 13:45:02 INFO  StartTopK:220 - source and target
+03-12-2018 13:45:38 INFO  StartTopK:220 - source and target
+03-12-2018 13:46:22 INFO  StartTopK:220 - source and target
+03-12-2018 13:47:33 INFO  StartTopK:220 - source and target
+03-12-2018 13:48:41 INFO  StartTopK:220 - source and target
+03-12-2018 13:54:16 INFO  StartTopK:220 - source and target
+03-12-2018 13:55:45 INFO  StartTopK:220 - source and target
+03-12-2018 13:57:05 INFO  StartTopK:220 - source and target
+03-12-2018 14:03:11 INFO  StartTopK:219 - source and target
+03-12-2018 14:05:18 INFO  StartTopK:219 - source and target
+03-12-2018 14:42:17 INFO  StartTopK:219 - source and target
+03-12-2018 15:11:35 INFO  StartTopK:219 - source and target
+03-12-2018 15:12:18 INFO  StartTopK:218 - source and target
+03-12-2018 15:14:04 INFO  StartTopK:218 - source and target
+03-12-2018 15:16:02 INFO  StartTopK:218 - source and target
+03-12-2018 15:18:59 INFO  StartTopK:219 - source and target
+03-12-2018 16:51:38 INFO  StartTopK:224 - source and target
+03-12-2018 16:58:41 INFO  StartTopK:224 - source and target
+03-12-2018 16:59:44 INFO  StartTopK:224 - source and target
+03-12-2018 17:00:25 INFO  StartTopK:224 - source and target
+03-12-2018 17:01:05 INFO  StartTopK:224 - source and target
+03-12-2018 17:03:24 INFO  StartTopK:229 - source and target
+03-12-2018 17:31:20 INFO  StartTopK:235 - source and target
+03-12-2018 17:31:48 INFO  StartTopK:235 - source and target
+03-12-2018 17:32:51 INFO  StartTopK:235 - source and target
+03-12-2018 17:33:11 INFO  StartTopK:235 - source and target
+03-12-2018 17:33:28 INFO  StartTopK:235 - source and target
+03-12-2018 17:35:22 INFO  StartTopK:235 - source and target
+03-12-2018 17:36:20 INFO  StartTopK:235 - source and target
+03-12-2018 17:37:21 INFO  StartTopK:235 - source and target
+03-12-2018 17:37:44 INFO  StartTopK:235 - source and target
+03-12-2018 17:37:50 INFO  StartTopK:235 - source and target
+03-12-2018 17:38:10 INFO  StartTopK:235 - source and target
+03-12-2018 17:38:58 INFO  StartTopK:235 - source and target
+03-12-2018 17:39:19 INFO  StartTopK:235 - source and target
+03-12-2018 17:39:49 INFO  StartTopK:235 - source and target
+03-12-2018 17:39:57 INFO  StartTopK:235 - source and target
+03-12-2018 17:40:25 INFO  StartTopK:235 - source and target
+03-12-2018 17:41:33 INFO  StartTopK:235 - source and target
+03-12-2018 17:42:01 INFO  StartTopK:235 - source and target
+03-12-2018 17:49:09 INFO  StartTopK:235 - source and target
+03-12-2018 17:49:54 INFO  StartTopK:236 - source and target
+03-12-2018 17:50:31 INFO  StartTopK:236 - source and target
+03-12-2018 17:55:09 INFO  StartTopK:235 - source and target
+03-12-2018 17:57:48 INFO  StartTopK:239 - source and target
+03-12-2018 17:59:17 INFO  StartTopK:245 - source and target
+03-12-2018 18:03:36 INFO  StartTopK:248 - source and target
+03-12-2018 18:26:06 INFO  StartTopK:247 - source and target
+03-12-2018 18:26:30 INFO  StartTopK:247 - source and target
+03-12-2018 18:27:21 INFO  StartTopK:247 - source and target
+03-12-2018 18:38:58 INFO  StartTopK:248 - source and target
+03-12-2018 18:40:42 INFO  StartTopK:248 - source and target
+03-12-2018 18:41:12 INFO  StartTopK:248 - source and target
+03-12-2018 18:43:04 INFO  StartTopK:247 - source and target
+03-12-2018 18:51:30 INFO  StartTopK:248 - source and target
+03-12-2018 18:57:11 INFO  StartTopK:248 - source and target
+03-12-2018 19:13:58 INFO  StartTopK:254 - source and target
+03-12-2018 19:14:47 INFO  StartTopK:254 - source and target
+03-12-2018 19:28:56 INFO  StartTopK:254 - source and target
+03-12-2018 19:36:58 INFO  StartTopK:254 - source and target
+03-12-2018 19:40:54 INFO  StartTopK:254 - source and target
+03-12-2018 19:44:41 INFO  StartTopK:254 - source and target
+03-12-2018 19:47:32 INFO  StartTopK:254 - source and target
+03-12-2018 19:48:20 INFO  StartTopK:254 - source and target
+03-12-2018 19:50:03 INFO  StartTopK:254 - source and target
+03-12-2018 19:53:12 INFO  StartTopK:253 - source and target
+03-12-2018 22:26:13 INFO  StartTopK:253 - source and target
+03-12-2018 22:34:28 INFO  StartTopK:253 - source and target
+03-12-2018 22:35:55 INFO  StartTopK:253 - source and target
+04-12-2018 18:57:54 INFO  StartTopK:254 - source and target
+05-12-2018 17:30:03 INFO  StartTopK:254 - source and target
+05-12-2018 17:30:31 INFO  StartTopK:254 - source and target
+05-12-2018 18:00:32 INFO  StartTopK:254 - source and target
+05-12-2018 18:27:49 INFO  StartTopK:253 - source and target
+05-12-2018 18:33:26 ERROR riot:84 - [line: 40, col: 1 ] Triple not terminated by DOT: [IRI:http://localhost:3025/protein/query]
+05-12-2018 18:33:47 INFO  StartTopK:253 - source and target
+06-12-2018 12:50:23 INFO  StartTopK:254 - source and target
+06-12-2018 12:56:24 INFO  StartTopK:255 - source and target
+06-12-2018 12:58:49 INFO  StartTopK:255 - source and target
+06-12-2018 12:59:29 INFO  StartTopK:255 - source and target
+06-12-2018 13:01:42 INFO  StartTopK:255 - source and target
+06-12-2018 13:10:47 INFO  StartTopK:255 - source and target
+06-12-2018 13:13:07 INFO  StartTopK:256 - source and target
+06-12-2018 13:14:36 INFO  StartTopK:256 - source and target
+06-12-2018 13:16:09 INFO  StartTopK:257 - source and target
+06-12-2018 13:17:08 INFO  StartTopK:259 - source and target
+06-12-2018 13:18:22 INFO  StartTopK:260 - source and target
+06-12-2018 13:19:12 INFO  StartTopK:261 - source and target
+06-12-2018 13:20:20 INFO  StartTopK:262 - source and target
+06-12-2018 13:20:42 INFO  StartTopK:262 - source and target
+06-12-2018 13:21:57 INFO  StartTopK:263 - source and target
+06-12-2018 13:22:38 INFO  StartTopK:263 - source and target
+06-12-2018 13:28:35 INFO  StartTopK:264 - source and target
+06-12-2018 13:35:45 INFO  StartTopK:265 - source and target
+06-12-2018 13:37:16 INFO  StartTopK:267 - source and target
+06-12-2018 13:39:10 INFO  StartTopK:267 - source and target
+06-12-2018 13:47:31 INFO  StartTopK:267 - source and target
+06-12-2018 13:58:23 INFO  StartTopK:267 - source and target
+06-12-2018 14:00:40 INFO  StartTopK:267 - source and target
+06-12-2018 14:40:57 INFO  StartTopK:267 - source and target
+06-12-2018 14:41:24 INFO  StartTopK:267 - source and target
+06-12-2018 14:42:29 INFO  StartTopK:268 - source and target
+06-12-2018 14:43:44 INFO  StartTopK:269 - source and target
+06-12-2018 16:06:29 INFO  StartTopK:274 - source and target
+06-12-2018 16:08:26 INFO  StartTopK:274 - source and target
+06-12-2018 16:11:37 INFO  StartTopK:274 - source and target
+06-12-2018 16:17:28 INFO  StartTopK:274 - source and target
+06-12-2018 16:21:31 INFO  StartTopK:274 - source and target
+06-12-2018 16:24:33 INFO  StartTopK:274 - source and target
+06-12-2018 16:24:52 INFO  StartTopK:274 - source and target
+06-12-2018 16:25:16 INFO  StartTopK:274 - source and target
+07-12-2018 16:14:59 INFO  StartTopK:271 - source and target
+07-12-2018 16:17:52 INFO  StartTopK:271 - source and target
+07-12-2018 16:18:47 INFO  StartTopK:273 - source and target
+07-12-2018 16:32:53 INFO  StartTopK:273 - source and target
+07-12-2018 16:33:43 INFO  StartTopK:273 - source and target
+07-12-2018 16:34:21 INFO  StartTopK:273 - source and target
+07-12-2018 16:34:54 INFO  StartTopK:273 - source and target
+07-12-2018 16:38:42 INFO  StartTopK:281 - source and target
+07-12-2018 16:42:34 INFO  StartTopK:289 - source and target
+07-12-2018 16:43:25 INFO  StartTopK:289 - source and target
+07-12-2018 16:43:44 INFO  StartTopK:289 - source and target
+07-12-2018 16:44:28 INFO  StartTopK:289 - source and target
+07-12-2018 16:46:38 INFO  StartTopK:289 - source and target
+07-12-2018 16:47:23 INFO  StartTopK:289 - source and target
+07-12-2018 16:47:55 INFO  StartTopK:289 - source and target
+07-12-2018 16:54:08 INFO  StartTopK:295 - source and target
+07-12-2018 16:57:27 INFO  StartTopK:295 - source and target
+07-12-2018 16:57:46 INFO  StartTopK:295 - source and target
+07-12-2018 17:00:23 INFO  StartTopK:295 - source and target
+07-12-2018 17:00:48 INFO  StartTopK:295 - source and target
+07-12-2018 17:01:58 INFO  StartTopK:295 - source and target
+07-12-2018 17:02:29 INFO  StartTopK:295 - source and target
+07-12-2018 17:04:24 INFO  StartTopK:295 - source and target
+07-12-2018 17:04:47 INFO  StartTopK:295 - source and target
+07-12-2018 17:05:21 INFO  StartTopK:295 - source and target
+07-12-2018 17:07:12 INFO  StartTopK:295 - source and target
+07-12-2018 17:08:03 INFO  StartTopK:295 - source and target
+07-12-2018 17:08:25 INFO  StartTopK:295 - source and target
+07-12-2018 18:25:49 INFO  StartTopK:295 - source and target
+07-12-2018 19:20:41 INFO  StartTopK:295 - source and target
+07-12-2018 19:39:29 INFO  StartTopK:295 - source and target
+10-12-2018 18:04:50 INFO  StartTopK:293 - source and target
+10-12-2018 18:06:07 INFO  StartTopK:293 - source and target
+10-12-2018 18:07:42 INFO  StartTopK:293 - source and target
+10-12-2018 18:28:42 INFO  StartTopK:293 - source and target
+10-12-2018 18:29:19 INFO  StartTopK:293 - source and target
+10-12-2018 18:59:34 INFO  StartTopK:293 - source and target
+10-12-2018 20:28:13 INFO  StartTopK:293 - source and target
+10-12-2018 20:32:35 INFO  StartTopK:293 - source and target
+10-12-2018 20:34:19 INFO  StartTopK:293 - source and target
+10-12-2018 20:52:38 INFO  StartTopK:293 - source and target
+11-12-2018 10:41:03 INFO  StartTopK:293 - source and target
+11-12-2018 10:49:38 INFO  StartTopK:293 - source and target
+11-12-2018 10:50:51 INFO  StartTopK:293 - source and target
+11-12-2018 10:57:57 INFO  StartTopK:293 - source and target
+11-12-2018 11:16:00 INFO  StartTopK:293 - source and target
+11-12-2018 11:18:01 INFO  StartTopK:293 - source and target
+11-12-2018 11:40:59 INFO  StartTopK:293 - source and target
+11-12-2018 13:34:32 INFO  StartTopK:293 - source and target
+11-12-2018 13:43:00 INFO  StartTopK:293 - source and target
+11-12-2018 13:45:28 INFO  StartTopK:293 - source and target
+11-12-2018 13:47:35 INFO  StartTopK:293 - source and target
+11-12-2018 13:58:44 INFO  StartTopK:293 - source and target
+11-12-2018 14:06:10 INFO  StartTopK:293 - source and target
+11-12-2018 14:12:00 INFO  StartTopK:293 - source and target
+11-12-2018 14:34:12 INFO  StartTopK:293 - source and target
+11-12-2018 14:40:12 INFO  StartTopK:293 - source and target
+11-12-2018 14:45:33 INFO  StartTopK:293 - source and target
+11-12-2018 17:40:17 INFO  StartTopK:293 - source and target
+12-12-2018 15:03:29 INFO  StartTopK:293 - source and target
+12-12-2018 16:46:55 INFO  StartTopK:293 - source and target
+12-12-2018 16:55:12 INFO  StartTopK:293 - source and target
+12-12-2018 16:55:16 INFO  StartTopK:293 - source and target
+12-12-2018 16:57:20 INFO  StartTopK:293 - source and target
+12-12-2018 17:00:01 INFO  StartTopK:293 - source and target
+12-12-2018 17:06:39 INFO  StartTopK:293 - source and target
+12-12-2018 17:35:22 INFO  StartTopK:293 - source and target
+12-12-2018 17:36:50 INFO  StartTopK:293 - source and target
+12-12-2018 17:38:25 INFO  StartTopK:293 - source and target
+12-12-2018 17:43:40 INFO  StartTopK:293 - source and target
+12-12-2018 17:58:36 INFO  StartTopK:293 - source and target
+12-12-2018 18:01:02 INFO  StartTopK:293 - source and target
+12-12-2018 18:03:56 INFO  StartTopK:293 - source and target
+12-12-2018 18:06:06 INFO  StartTopK:293 - source and target
+12-12-2018 18:09:50 INFO  StartTopK:293 - source and target
+12-12-2018 18:23:10 INFO  StartTopK:293 - source and target
+12-12-2018 18:25:43 INFO  StartTopK:293 - source and target
+12-12-2018 18:29:19 INFO  StartTopK:293 - source and target
+12-12-2018 18:33:46 INFO  StartTopK:293 - source and target
+12-12-2018 18:43:39 INFO  StartTopK:293 - source and target
+12-12-2018 18:44:39 INFO  StartTopK:293 - source and target
+12-12-2018 18:46:16 INFO  StartTopK:293 - source and target
+12-12-2018 18:46:22 INFO  StartTopK:293 - source and target
+12-12-2018 18:55:13 INFO  StartTopK:293 - source and target
+12-12-2018 18:58:46 INFO  StartTopK:293 - source and target
+12-12-2018 19:02:42 INFO  StartTopK:293 - source and target
+12-12-2018 19:05:22 INFO  StartTopK:293 - source and target
+12-12-2018 19:05:29 INFO  StartTopK:293 - source and target
+12-12-2018 19:07:06 INFO  StartTopK:293 - source and target
+12-12-2018 19:09:21 INFO  StartTopK:293 - source and target
+12-12-2018 19:11:01 INFO  StartTopK:293 - source and target
+12-12-2018 19:12:40 INFO  StartTopK:293 - source and target
+12-12-2018 19:18:43 INFO  StartTopK:293 - source and target
+13-12-2018 11:28:19 INFO  StartTopK:293 - source and target
+13-12-2018 11:33:55 INFO  StartTopK:293 - source and target
+13-12-2018 14:36:53 INFO  StartTopK:293 - source and target
+13-12-2018 14:51:47 INFO  StartTopK:293 - source and target
+13-12-2018 14:57:08 INFO  StartTopK:293 - source and target
+13-12-2018 14:58:29 ERROR riot:84 - [line: 18, col: 42] Expected IRI: Got: [KEYWORD:s]
+13-12-2018 14:58:47 ERROR riot:84 - [line: 18, col: 42] Expected IRI: Got: [KEYWORD:s]
+13-12-2018 14:58:59 INFO  StartTopK:293 - source and target
+13-12-2018 15:46:55 INFO  StartTopK:293 - source and target
+13-12-2018 15:49:40 INFO  StartTopK:293 - source and target
+13-12-2018 15:50:12 INFO  StartTopK:293 - source and target
+13-12-2018 15:51:30 INFO  StartTopK:293 - source and target
+13-12-2018 17:48:24 INFO  StartTopK:293 - source and target
+13-12-2018 17:52:05 INFO  StartTopK:323 - source and target
+16-12-2018 22:53:18 INFO  StartTopK:323 - source and target
+16-12-2018 22:54:15 INFO  StartTopK:323 - source and target
+16-12-2018 23:16:39 INFO  StartTopK:323 - source and target
+16-12-2018 23:19:26 INFO  StartTopK:323 - source and target
+16-12-2018 23:20:29 INFO  StartTopK:323 - source and target
+16-12-2018 23:21:58 INFO  StartTopK:323 - source and target
+16-12-2018 23:22:30 INFO  StartTopK:323 - source and target
+16-12-2018 23:34:09 INFO  StartTopK:323 - source and target
+16-12-2018 23:36:28 INFO  StartTopK:323 - source and target
+17-12-2018 11:24:32 INFO  StartTopK:323 - source and target
+17-12-2018 11:28:34 INFO  StartTopK:323 - source and target
+17-12-2018 11:35:45 INFO  StartTopK:323 - source and target
+17-12-2018 11:45:01 INFO  StartTopK:323 - source and target
+17-12-2018 11:46:42 INFO  StartTopK:323 - source and target
+17-12-2018 11:47:56 INFO  StartTopK:323 - source and target
+17-12-2018 13:07:57 INFO  StartTopK:323 - source and target
+17-12-2018 13:15:12 INFO  StartTopK:323 - source and target
+17-12-2018 13:19:20 INFO  StartTopK:323 - source and target
+17-12-2018 13:21:26 INFO  StartTopK:323 - source and target
+17-12-2018 13:21:49 INFO  StartTopK:323 - source and target
+17-12-2018 13:22:33 INFO  StartTopK:323 - source and target
+17-12-2018 13:25:39 INFO  StartTopK:323 - source and target
+17-12-2018 13:27:21 INFO  StartTopK:323 - source and target
+17-12-2018 13:46:45 INFO  StartTopK:323 - source and target
+17-12-2018 13:49:06 INFO  StartTopK:323 - source and target
+17-12-2018 13:53:25 INFO  StartTopK:323 - source and target
+17-12-2018 13:57:32 INFO  StartTopK:323 - source and target
+17-12-2018 13:58:24 INFO  StartTopK:323 - source and target
+17-12-2018 13:59:21 INFO  StartTopK:323 - source and target
+17-12-2018 13:59:29 INFO  StartTopK:323 - source and target
+17-12-2018 14:03:27 INFO  StartTopK:323 - source and target
+17-12-2018 14:03:53 INFO  StartTopK:323 - source and target
+17-12-2018 14:06:20 INFO  StartTopK:323 - source and target
+17-12-2018 14:10:58 INFO  StartTopK:323 - source and target
+17-12-2018 14:11:51 INFO  StartTopK:323 - source and target
+17-12-2018 14:13:35 INFO  StartTopK:323 - source and target
+17-12-2018 14:14:03 INFO  StartTopK:323 - source and target
+17-12-2018 14:15:21 INFO  StartTopK:323 - source and target
+17-12-2018 14:17:20 INFO  StartTopK:323 - source and target
+17-12-2018 14:21:21 INFO  StartTopK:323 - source and target
+17-12-2018 14:22:30 INFO  StartTopK:323 - source and target
+17-12-2018 14:22:52 INFO  StartTopK:323 - source and target
+17-12-2018 14:23:00 INFO  StartTopK:323 - source and target
+17-12-2018 14:28:11 INFO  StartTopK:323 - source and target
+17-12-2018 14:30:04 INFO  StartTopK:323 - source and target
+17-12-2018 14:30:33 INFO  StartTopK:323 - source and target
+17-12-2018 14:30:49 INFO  StartTopK:323 - source and target
+17-12-2018 14:31:36 INFO  StartTopK:323 - source and target
+17-12-2018 14:38:16 INFO  StartTopK:323 - source and target
+17-12-2018 14:41:04 INFO  StartTopK:323 - source and target
+17-12-2018 14:41:40 INFO  StartTopK:323 - source and target
+17-12-2018 14:45:14 INFO  StartTopK:323 - source and target
+17-12-2018 14:51:45 INFO  StartTopK:323 - source and target
+17-12-2018 14:54:45 INFO  StartTopK:323 - source and target
+17-12-2018 15:00:57 INFO  StartTopK:323 - source and target
+17-12-2018 15:11:42 INFO  StartTopK:323 - source and target
+17-12-2018 15:47:19 INFO  StartTopK:323 - source and target
+17-12-2018 15:49:44 INFO  StartTopK:323 - source and target
+17-12-2018 15:52:13 INFO  StartTopK:323 - source and target
+17-12-2018 15:54:50 INFO  StartTopK:323 - source and target
+17-12-2018 15:55:45 INFO  StartTopK:323 - source and target
+17-12-2018 15:56:55 INFO  StartTopK:323 - source and target
+17-12-2018 15:58:18 INFO  StartTopK:323 - source and target
+17-12-2018 15:59:59 INFO  StartTopK:323 - source and target
+17-12-2018 16:00:25 INFO  StartTopK:323 - source and target
+17-12-2018 16:08:07 INFO  StartTopK:323 - source and target
+17-12-2018 16:08:38 INFO  StartTopK:323 - source and target
+17-12-2018 16:09:53 INFO  StartTopK:323 - source and target
+17-12-2018 16:11:27 INFO  StartTopK:323 - source and target
+17-12-2018 16:11:48 INFO  StartTopK:323 - source and target
+17-12-2018 16:13:43 INFO  StartTopK:323 - source and target
+17-12-2018 16:14:10 INFO  StartTopK:323 - source and target
+17-12-2018 16:14:58 INFO  StartTopK:323 - source and target
+17-12-2018 16:22:56 INFO  StartTopK:323 - source and target
+17-12-2018 16:24:39 INFO  StartTopK:323 - source and target
+17-12-2018 16:26:14 INFO  StartTopK:323 - source and target
+17-12-2018 16:26:47 INFO  StartTopK:323 - source and target
+17-12-2018 16:27:02 INFO  StartTopK:323 - source and target
+17-12-2018 16:27:31 INFO  StartTopK:323 - source and target
+17-12-2018 16:27:52 INFO  StartTopK:323 - source and target
+17-12-2018 16:28:13 INFO  StartTopK:323 - source and target
+17-12-2018 16:28:48 INFO  StartTopK:323 - source and target
+17-12-2018 16:33:59 INFO  StartTopK:323 - source and target
+17-12-2018 16:53:12 INFO  StartTopK:323 - source and target
+17-12-2018 17:14:51 INFO  StartTopK:323 - source and target
+17-12-2018 17:29:06 INFO  StartTopK:323 - source and target
+17-12-2018 17:30:08 INFO  StartTopK:323 - source and target
+17-12-2018 17:33:52 INFO  StartTopK:323 - source and target
+17-12-2018 17:38:04 INFO  StartTopK:323 - source and target
+17-12-2018 17:38:57 INFO  StartTopK:323 - source and target
+17-12-2018 17:39:11 INFO  StartTopK:323 - source and target
+17-12-2018 17:39:53 INFO  StartTopK:323 - source and target
+17-12-2018 17:41:23 INFO  StartTopK:323 - source and target
+17-12-2018 17:43:20 INFO  StartTopK:323 - source and target
+17-12-2018 17:43:31 INFO  StartTopK:323 - source and target
+17-12-2018 17:43:55 INFO  StartTopK:323 - source and target
+17-12-2018 17:45:36 INFO  StartTopK:323 - source and target
+17-12-2018 17:46:52 INFO  StartTopK:323 - source and target
+17-12-2018 17:47:42 INFO  StartTopK:323 - source and target
+17-12-2018 17:50:01 INFO  StartTopK:323 - source and target
+17-12-2018 18:03:50 INFO  StartTopK:323 - source and target
+17-12-2018 18:22:57 INFO  StartTopK:323 - source and target
+17-12-2018 18:23:19 INFO  StartTopK:323 - source and target
+17-12-2018 18:28:15 INFO  StartTopK:323 - source and target
+17-12-2018 18:30:07 INFO  StartTopK:323 - source and target
+17-12-2018 18:31:12 INFO  StartTopK:323 - source and target
+17-12-2018 18:34:35 INFO  StartTopK:323 - source and target
+17-12-2018 18:36:17 INFO  StartTopK:323 - source and target
+17-12-2018 18:36:39 INFO  StartTopK:323 - source and target
+17-12-2018 18:50:47 INFO  StartTopK:323 - source and target
+17-12-2018 18:51:39 INFO  StartTopK:323 - source and target
+17-12-2018 18:52:25 INFO  StartTopK:323 - source and target
+17-12-2018 18:58:41 INFO  StartTopK:323 - source and target
+17-12-2018 19:02:04 INFO  StartTopK:323 - source and target
+17-12-2018 19:02:37 INFO  StartTopK:323 - source and target
+17-12-2018 19:05:28 INFO  StartTopK:323 - source and target
+17-12-2018 19:32:23 INFO  StartTopK:323 - source and target
+17-12-2018 19:33:29 INFO  StartTopK:323 - source and target
+17-12-2018 19:38:07 INFO  StartTopK:323 - source and target
+17-12-2018 19:41:17 INFO  StartTopK:323 - source and target
+17-12-2018 19:42:37 INFO  StartTopK:323 - source and target
+17-12-2018 19:53:55 INFO  StartTopK:323 - source and target
+17-12-2018 19:54:28 INFO  StartTopK:323 - source and target
+18-12-2018 13:16:34 INFO  StartTopK:323 - source and target
+18-12-2018 13:32:28 INFO  StartTopK:323 - source and target
+18-12-2018 13:37:46 INFO  StartTopK:323 - source and target
+18-12-2018 14:00:02 INFO  StartTopK:323 - source and target
+18-12-2018 14:46:41 INFO  StartTopK:323 - source and target
+18-12-2018 14:48:26 INFO  StartTopK:323 - source and target
+18-12-2018 14:51:30 INFO  StartTopK:323 - source and target
+18-12-2018 15:08:29 INFO  StartTopK:323 - source and target
+18-12-2018 15:09:01 INFO  StartTopK:323 - source and target
+18-12-2018 15:11:28 INFO  StartTopK:323 - source and target
+18-12-2018 15:32:46 INFO  StartTopK:323 - source and target
+18-12-2018 15:57:45 INFO  StartTopK:323 - source and target
+18-12-2018 16:00:10 INFO  StartTopK:323 - source and target
+18-12-2018 16:01:34 INFO  StartTopK:323 - source and target
+18-12-2018 16:03:39 INFO  StartTopK:323 - source and target
+18-12-2018 16:14:39 INFO  StartTopK:323 - source and target
+18-12-2018 16:33:30 INFO  StartTopK:323 - source and target
+18-12-2018 16:37:12 INFO  StartTopK:323 - source and target
+18-12-2018 16:39:26 INFO  StartTopK:323 - source and target
+18-12-2018 16:42:51 INFO  StartTopK:323 - source and target
+19-12-2018 18:55:59 INFO  StartTopK:322 - source and target
+19-12-2018 18:57:59 INFO  StartTopK:322 - source and target
+19-12-2018 18:59:33 INFO  StartTopK:322 - source and target
+19-12-2018 19:00:26 INFO  StartTopK:322 - source and target
+19-12-2018 19:01:29 INFO  StartTopK:322 - source and target
+19-12-2018 19:03:08 INFO  StartTopK:322 - source and target
+19-12-2018 19:03:18 INFO  StartTopK:322 - source and target
+19-12-2018 19:03:44 INFO  StartTopK:322 - source and target
+19-12-2018 19:06:03 INFO  StartTopK:323 - source and target
+19-12-2018 19:07:00 INFO  StartTopK:323 - source and target
+19-12-2018 19:08:07 INFO  StartTopK:322 - source and target
+19-12-2018 19:09:21 INFO  StartTopK:322 - source and target
+19-12-2018 19:10:27 INFO  StartTopK:322 - source and target
+19-12-2018 19:10:46 INFO  StartTopK:322 - source and target
+19-12-2018 19:11:54 INFO  StartTopK:323 - source and target
+19-12-2018 19:12:38 INFO  StartTopK:323 - source and target
+19-12-2018 19:14:07 INFO  StartTopK:322 - source and target
+19-12-2018 19:15:27 INFO  StartTopK:322 - source and target
+19-12-2018 19:15:49 INFO  StartTopK:322 - source and target
+19-12-2018 19:16:14 INFO  StartTopK:322 - source and target
+19-12-2018 19:17:26 INFO  StartTopK:323 - source and target
+19-12-2018 19:18:13 INFO  StartTopK:323 - source and target
+19-12-2018 19:18:30 INFO  StartTopK:323 - source and target
+19-12-2018 19:18:42 INFO  StartTopK:323 - source and target
+19-12-2018 19:18:57 INFO  StartTopK:323 - source and target
+19-12-2018 19:19:38 INFO  StartTopK:323 - source and target
+19-12-2018 19:19:46 INFO  StartTopK:323 - source and target
+19-12-2018 19:20:34 INFO  StartTopK:322 - source and target
+19-12-2018 19:21:18 INFO  StartTopK:322 - source and target
+19-12-2018 19:22:57 INFO  StartTopK:322 - source and target
+19-12-2018 19:26:24 INFO  StartTopK:322 - source and target
+19-12-2018 19:26:51 INFO  StartTopK:322 - source and target
+19-12-2018 19:27:11 INFO  StartTopK:322 - source and target
+19-12-2018 19:27:23 INFO  StartTopK:322 - source and target
+19-12-2018 19:27:40 INFO  StartTopK:322 - source and target
+19-12-2018 19:37:03 INFO  StartTopK:322 - source and target
+19-12-2018 19:38:26 INFO  StartTopK:322 - source and target
+19-12-2018 19:40:04 INFO  StartTopK:322 - source and target
+19-12-2018 20:23:16 INFO  StartTopK:322 - source and target
+19-12-2018 21:01:56 INFO  StartTopK:322 - source and target
+19-12-2018 21:02:42 INFO  StartTopK:322 - source and target
+19-12-2018 21:03:10 INFO  StartTopK:322 - source and target
+19-12-2018 21:03:18 INFO  StartTopK:322 - source and target
+19-12-2018 21:04:25 INFO  StartTopK:322 - source and target
+19-12-2018 21:05:04 INFO  StartTopK:322 - source and target
+19-12-2018 21:06:43 INFO  StartTopK:322 - source and target
+19-12-2018 21:06:55 INFO  StartTopK:322 - source and target
+19-12-2018 21:08:21 INFO  StartTopK:322 - source and target
+19-12-2018 21:09:20 INFO  StartTopK:322 - source and target
+19-12-2018 21:09:48 INFO  StartTopK:322 - source and target
+19-12-2018 21:10:26 INFO  StartTopK:322 - source and target
+19-12-2018 21:10:37 INFO  StartTopK:322 - source and target
+19-12-2018 21:11:31 INFO  StartTopK:322 - source and target
+19-12-2018 21:11:48 INFO  StartTopK:322 - source and target
+19-12-2018 21:12:14 INFO  StartTopK:322 - source and target
+19-12-2018 21:13:52 INFO  StartTopK:322 - source and target
+19-12-2018 21:14:19 INFO  StartTopK:322 - source and target
+19-12-2018 21:16:53 INFO  StartTopK:322 - source and target
+19-12-2018 21:20:54 INFO  StartTopK:322 - source and target
+19-12-2018 21:21:09 INFO  StartTopK:322 - source and target
+19-12-2018 21:22:03 INFO  StartTopK:322 - source and target
+19-12-2018 21:23:17 INFO  StartTopK:322 - source and target
+19-12-2018 21:43:10 INFO  StartTopK:322 - source and target
+19-12-2018 21:45:58 INFO  StartTopK:322 - source and target
+19-12-2018 21:46:12 INFO  StartTopK:322 - source and target
+19-12-2018 21:47:30 INFO  StartTopK:322 - source and target
+19-12-2018 21:48:38 INFO  StartTopK:322 - source and target
+19-12-2018 21:49:22 INFO  StartTopK:322 - source and target
+19-12-2018 21:49:37 INFO  StartTopK:322 - source and target
+19-12-2018 21:49:54 INFO  StartTopK:322 - source and target
+19-12-2018 21:50:18 INFO  StartTopK:322 - source and target
+19-12-2018 21:51:32 INFO  StartTopK:322 - source and target
+19-12-2018 21:52:49 INFO  StartTopK:322 - source and target
+19-12-2018 21:53:08 INFO  StartTopK:322 - source and target
+19-12-2018 21:53:57 INFO  StartTopK:322 - source and target
+19-12-2018 21:54:31 INFO  StartTopK:322 - source and target
+19-12-2018 21:55:04 INFO  StartTopK:322 - source and target
+19-12-2018 21:55:36 INFO  StartTopK:322 - source and target
+19-12-2018 21:56:00 INFO  StartTopK:322 - source and target
+19-12-2018 21:56:39 INFO  StartTopK:322 - source and target
+19-12-2018 21:57:00 INFO  StartTopK:322 - source and target
+19-12-2018 21:57:42 INFO  StartTopK:322 - source and target
+19-12-2018 22:01:53 INFO  StartTopK:322 - source and target
+19-12-2018 22:02:28 INFO  StartTopK:322 - source and target
+19-12-2018 22:03:21 INFO  StartTopK:322 - source and target
+19-12-2018 22:04:02 INFO  StartTopK:322 - source and target
+19-12-2018 22:04:21 INFO  StartTopK:322 - source and target
+19-12-2018 22:04:36 INFO  StartTopK:322 - source and target
+19-12-2018 22:05:00 INFO  StartTopK:322 - source and target
+19-12-2018 22:06:23 INFO  StartTopK:322 - source and target
+19-12-2018 22:06:41 INFO  StartTopK:322 - source and target
+19-12-2018 22:10:09 INFO  StartTopK:323 - source and target
+19-12-2018 22:10:42 INFO  StartTopK:321 - source and target
+19-12-2018 22:12:33 INFO  StartTopK:321 - source and target
+19-12-2018 22:14:44 INFO  StartTopK:320 - source and target
+19-12-2018 22:16:32 INFO  StartTopK:320 - source and target
+19-12-2018 22:17:15 INFO  StartTopK:320 - source and target
+19-12-2018 22:18:08 INFO  StartTopK:321 - source and target
+20-12-2018 12:44:13 INFO  StartTopK:322 - source and target
+20-12-2018 12:47:10 INFO  StartTopK:322 - source and target
+20-12-2018 12:47:54 INFO  StartTopK:320 - source and target
+20-12-2018 12:49:44 INFO  StartTopK:320 - source and target
+20-12-2018 12:50:31 INFO  StartTopK:320 - source and target
+20-12-2018 12:51:13 INFO  StartTopK:320 - source and target
+20-12-2018 12:51:39 INFO  StartTopK:320 - source and target
+20-12-2018 12:52:13 INFO  StartTopK:320 - source and target
+20-12-2018 12:52:32 INFO  StartTopK:320 - source and target
+20-12-2018 12:53:05 INFO  StartTopK:322 - source and target
+20-12-2018 12:54:21 INFO  StartTopK:321 - source and target
+20-12-2018 12:55:05 INFO  StartTopK:320 - source and target
+20-12-2018 12:57:38 INFO  StartTopK:320 - source and target
+20-12-2018 12:58:33 INFO  StartTopK:320 - source and target
+20-12-2018 12:59:59 INFO  StartTopK:322 - source and target
+20-12-2018 13:00:25 INFO  StartTopK:322 - source and target
+20-12-2018 13:00:48 INFO  StartTopK:321 - source and target
+20-12-2018 13:01:36 INFO  StartTopK:320 - source and target
+20-12-2018 13:08:31 INFO  StartTopK:322 - source and target
+20-12-2018 13:08:59 INFO  StartTopK:322 - source and target
+20-12-2018 13:50:12 INFO  StartTopK:322 - source and target
+20-12-2018 13:51:06 INFO  StartTopK:322 - source and target
+20-12-2018 13:51:13 INFO  StartTopK:322 - source and target
+20-12-2018 13:52:15 INFO  StartTopK:322 - source and target
+20-12-2018 13:53:23 INFO  StartTopK:322 - source and target
+20-12-2018 13:54:31 INFO  StartTopK:322 - source and target
+20-12-2018 14:02:00 INFO  StartTopK:322 - source and target
+20-12-2018 14:04:17 INFO  StartTopK:322 - source and target
+20-12-2018 14:19:39 INFO  StartTopK:320 - source and target
+20-12-2018 14:26:31 INFO  StartTopK:319 - source and target
+20-12-2018 14:34:27 INFO  StartTopK:319 - source and target
+20-12-2018 14:38:46 INFO  StartTopK:320 - source and target
+20-12-2018 14:41:59 INFO  StartTopK:319 - source and target
+20-12-2018 14:44:04 INFO  StartTopK:320 - source and target
+20-12-2018 14:57:00 INFO  StartTopK:320 - source and target
+20-12-2018 14:57:26 INFO  StartTopK:320 - source and target
+20-12-2018 15:00:19 INFO  StartTopK:320 - source and target
+20-12-2018 15:07:12 INFO  StartTopK:320 - source and target
+20-12-2018 15:07:32 INFO  StartTopK:320 - source and target
+20-12-2018 15:56:04 INFO  StartTopK:320 - source and target
+20-12-2018 15:56:48 INFO  StartTopK:320 - source and target
+20-12-2018 16:14:58 INFO  StartTopK:320 - source and target
+20-12-2018 16:16:38 INFO  StartTopK:319 - source and target
+20-12-2018 16:17:18 INFO  StartTopK:320 - source and target
+20-12-2018 16:20:46 INFO  StartTopK:320 - source and target
+20-12-2018 16:22:52 INFO  StartTopK:320 - source and target
+20-12-2018 16:27:07 INFO  StartTopK:320 - source and target
+20-12-2018 16:27:36 INFO  StartTopK:320 - source and target
+20-12-2018 16:39:11 INFO  StartTopK:322 - source and target
+20-12-2018 16:40:39 INFO  StartTopK:322 - source and target
+20-12-2018 16:40:54 INFO  StartTopK:322 - source and target
+20-12-2018 17:00:04 INFO  StartTopK:322 - source and target
+20-12-2018 17:16:49 INFO  StartTopK:322 - source and target
+21-12-2018 02:04:17 INFO  StartTopK:322 - source and target
+21-12-2018 21:06:09 INFO  StartTopK:322 - source and target
+21-12-2018 21:06:33 INFO  StartTopK:322 - source and target
+21-12-2018 21:30:27 INFO  StartTopK:322 - source and target
+21-12-2018 21:31:49 INFO  StartTopK:322 - source and target
+21-12-2018 21:34:09 INFO  StartTopK:322 - source and target
+21-12-2018 21:35:36 INFO  StartTopK:322 - source and target
+21-12-2018 21:35:47 INFO  StartTopK:322 - source and target
+21-12-2018 21:36:29 INFO  StartTopK:322 - source and target
+21-12-2018 22:07:52 INFO  StartTopK:322 - source and target
+21-12-2018 22:08:50 INFO  StartTopK:322 - source and target
+21-12-2018 22:22:41 INFO  StartTopK:322 - source and target
+21-12-2018 22:24:17 INFO  StartTopK:322 - source and target
+21-12-2018 22:29:11 INFO  StartTopK:322 - source and target
+21-12-2018 22:33:06 INFO  StartTopK:322 - source and target
+21-12-2018 22:33:38 INFO  StartTopK:322 - source and target
+21-12-2018 22:34:19 INFO  StartTopK:322 - source and target
+21-12-2018 22:37:46 INFO  StartTopK:322 - source and target
+21-12-2018 22:42:58 INFO  StartTopK:322 - source and target
+21-12-2018 22:48:28 INFO  StartTopK:322 - source and target
+21-12-2018 22:48:58 INFO  StartTopK:322 - source and target
+21-12-2018 23:21:44 INFO  StartTopK:322 - source and target
+22-12-2018 10:59:58 INFO  StartTopK:322 - source and target
+22-12-2018 11:00:26 INFO  StartTopK:322 - source and target
+22-12-2018 11:08:12 INFO  StartTopK:322 - source and target
+22-12-2018 12:15:53 INFO  StartTopK:322 - source and target
+22-12-2018 12:18:55 INFO  StartTopK:322 - source and target
+22-12-2018 12:30:23 INFO  StartTopK:322 - source and target
+22-12-2018 12:39:24 INFO  StartTopK:322 - source and target
+22-12-2018 12:40:13 INFO  StartTopK:322 - source and target
+22-12-2018 12:42:09 INFO  StartTopK:322 - source and target
+22-12-2018 12:47:39 INFO  StartTopK:322 - source and target
+22-12-2018 12:48:48 INFO  StartTopK:322 - source and target
+22-12-2018 12:50:51 INFO  StartTopK:322 - source and target
+22-12-2018 12:53:48 INFO  StartTopK:322 - source and target
+22-12-2018 12:55:45 INFO  StartTopK:322 - source and target
+22-12-2018 12:56:45 INFO  StartTopK:322 - source and target
+22-12-2018 13:07:31 INFO  StartTopK:322 - source and target
+22-12-2018 13:08:40 INFO  StartTopK:319 - source and target
+22-12-2018 13:09:04 INFO  StartTopK:319 - source and target
+22-12-2018 13:10:29 INFO  StartTopK:319 - source and target
+22-12-2018 13:11:19 INFO  StartTopK:319 - source and target
+22-12-2018 13:37:46 INFO  StartTopK:319 - source and target
+22-12-2018 13:43:19 INFO  StartTopK:319 - source and target
+22-12-2018 13:44:46 INFO  StartTopK:320 - source and target
+22-12-2018 13:49:02 INFO  StartTopK:320 - source and target
+22-12-2018 13:52:00 INFO  StartTopK:320 - source and target
+22-12-2018 13:52:38 INFO  StartTopK:320 - source and target
+22-12-2018 13:52:46 INFO  StartTopK:320 - source and target
+22-12-2018 14:01:56 INFO  StartTopK:320 - source and target
+22-12-2018 14:03:30 INFO  StartTopK:320 - source and target
+22-12-2018 14:04:40 INFO  StartTopK:320 - source and target
+22-12-2018 14:04:54 INFO  StartTopK:320 - source and target
+22-12-2018 14:05:16 INFO  StartTopK:320 - source and target
+22-12-2018 14:06:58 INFO  StartTopK:320 - source and target
+22-12-2018 14:08:54 INFO  StartTopK:320 - source and target
+22-12-2018 14:10:03 INFO  StartTopK:320 - source and target
+22-12-2018 14:11:21 INFO  StartTopK:320 - source and target
+22-12-2018 14:12:01 INFO  StartTopK:320 - source and target
+22-12-2018 14:13:40 INFO  StartTopK:320 - source and target
+22-12-2018 14:13:59 INFO  StartTopK:320 - source and target
+22-12-2018 14:16:37 INFO  StartTopK:320 - source and target
+22-12-2018 14:19:16 INFO  StartTopK:320 - source and target
+22-12-2018 14:20:54 INFO  StartTopK:320 - source and target
+22-12-2018 14:27:36 INFO  StartTopK:320 - source and target
+22-12-2018 14:37:44 INFO  StartTopK:320 - source and target
+22-12-2018 14:44:29 INFO  StartTopK:320 - source and target
+22-12-2018 14:46:01 INFO  StartTopK:320 - source and target
+22-12-2018 14:46:43 INFO  StartTopK:320 - source and target
+22-12-2018 14:47:55 INFO  StartTopK:320 - source and target
+22-12-2018 14:52:15 INFO  StartTopK:320 - source and target
+22-12-2018 14:53:26 INFO  StartTopK:320 - source and target
+22-12-2018 14:53:55 INFO  StartTopK:320 - source and target
+22-12-2018 14:54:59 INFO  StartTopK:320 - source and target
+22-12-2018 14:55:52 INFO  StartTopK:320 - source and target
+22-12-2018 14:57:18 INFO  StartTopK:320 - source and target
+22-12-2018 14:57:57 INFO  StartTopK:320 - source and target
+22-12-2018 14:58:43 INFO  StartTopK:320 - source and target
+22-12-2018 17:42:37 INFO  StartTopK:320 - source and target
+22-12-2018 17:45:25 INFO  StartTopK:320 - source and target
+23-12-2018 01:15:58 INFO  StartTopK:320 - source and target
+23-12-2018 01:31:59 INFO  StartTopK:320 - source and target
+23-12-2018 17:28:33 INFO  StartTopK:320 - source and target
+25-12-2018 17:03:51 INFO  StartTopK:318 - source and target
+27-12-2018 16:54:21 INFO  StartTopK:318 - source and target
+27-12-2018 16:58:08 INFO  StartTopK:318 - source and target
+27-12-2018 17:04:46 INFO  StartTopK:318 - source and target
+27-12-2018 17:07:18 INFO  StartTopK:318 - source and target
+27-12-2018 17:09:54 INFO  StartTopK:318 - source and target
+27-12-2018 17:19:08 INFO  StartTopK:318 - source and target
+27-12-2018 17:22:12 INFO  StartTopK:318 - source and target
+27-12-2018 18:00:50 INFO  StartTopK:318 - source and target
+28-12-2018 00:25:51 INFO  StartTopK:330 - source and target
+28-12-2018 00:27:22 INFO  StartTopK:330 - source and target
+28-12-2018 13:10:58 INFO  StartTopK:330 - source and target
+28-12-2018 13:11:56 INFO  StartTopK:330 - source and target
+28-12-2018 14:50:24 INFO  StartTopK:330 - source and target
+28-12-2018 14:52:39 INFO  StartTopK:330 - source and target
+28-12-2018 14:54:29 INFO  StartTopK:330 - source and target
+28-12-2018 14:56:07 INFO  StartTopK:330 - source and target
+28-12-2018 14:57:18 INFO  StartTopK:330 - source and target
+28-12-2018 14:57:39 INFO  StartTopK:330 - source and target
+28-12-2018 14:58:43 INFO  StartTopK:330 - source and target
+28-12-2018 14:59:33 INFO  StartTopK:330 - source and target
+28-12-2018 15:01:19 INFO  StartTopK:330 - source and target
+28-12-2018 15:05:08 INFO  StartTopK:330 - source and target
+28-12-2018 15:05:35 INFO  StartTopK:330 - source and target
+28-12-2018 15:06:04 INFO  StartTopK:330 - source and target
+28-12-2018 15:06:26 INFO  StartTopK:330 - source and target
+28-12-2018 15:07:28 INFO  StartTopK:330 - source and target
+28-12-2018 15:08:22 INFO  StartTopK:330 - source and target
+28-12-2018 15:29:04 INFO  StartTopK:330 - source and target
+28-12-2018 15:29:26 INFO  StartTopK:330 - source and target
+28-12-2018 16:03:07 INFO  StartTopK:330 - source and target
+28-12-2018 16:09:07 INFO  StartTopK:330 - source and target
+28-12-2018 16:10:29 INFO  StartTopK:330 - source and target
+28-12-2018 16:23:41 INFO  StartTopK:330 - source and target
+28-12-2018 16:24:03 INFO  StartTopK:330 - source and target
+28-12-2018 16:29:24 INFO  StartTopK:330 - source and target
+28-12-2018 16:30:20 INFO  StartTopK:330 - source and target
+28-12-2018 16:33:17 INFO  StartTopK:330 - source and target
+28-12-2018 16:37:09 INFO  StartTopK:330 - source and target
+28-12-2018 17:11:50 INFO  StartTopK:330 - source and target
+28-12-2018 17:13:58 INFO  StartTopK:330 - source and target
+28-12-2018 17:17:18 INFO  StartTopK:330 - source and target
+28-12-2018 17:20:05 INFO  StartTopK:330 - source and target
+28-12-2018 17:20:48 INFO  StartTopK:330 - source and target
+28-12-2018 17:22:48 INFO  StartTopK:330 - source and target
+28-12-2018 17:23:23 INFO  StartTopK:330 - source and target
+28-12-2018 17:23:49 INFO  StartTopK:330 - source and target
+28-12-2018 17:24:03 INFO  StartTopK:330 - source and target
+28-12-2018 17:25:07 INFO  StartTopK:330 - source and target
+28-12-2018 17:25:51 INFO  StartTopK:330 - source and target
+28-12-2018 17:27:02 INFO  StartTopK:330 - source and target
+28-12-2018 17:28:19 INFO  StartTopK:330 - source and target
+28-12-2018 17:28:44 INFO  StartTopK:330 - source and target
+28-12-2018 17:30:32 INFO  StartTopK:330 - source and target
+28-12-2018 17:30:39 INFO  StartTopK:330 - source and target
+28-12-2018 17:30:45 INFO  StartTopK:330 - source and target
+28-12-2018 17:30:52 INFO  StartTopK:330 - source and target
+28-12-2018 17:30:58 INFO  StartTopK:330 - source and target
+28-12-2018 17:31:05 INFO  StartTopK:330 - source and target
+28-12-2018 17:31:12 INFO  StartTopK:330 - source and target
+28-12-2018 17:31:58 INFO  StartTopK:330 - source and target
+28-12-2018 17:32:24 INFO  StartTopK:330 - source and target
+28-12-2018 17:34:09 INFO  StartTopK:330 - source and target
+28-12-2018 17:35:42 INFO  StartTopK:330 - source and target
+28-12-2018 17:36:28 INFO  StartTopK:330 - source and target
+28-12-2018 17:36:58 INFO  StartTopK:330 - source and target
+28-12-2018 17:38:36 INFO  StartTopK:330 - source and target
+28-12-2018 18:44:18 INFO  StartTopK:325 - source and target
+28-12-2018 18:55:00 INFO  StartTopK:325 - source and target
+28-12-2018 18:56:35 INFO  StartTopK:326 - source and target
+28-12-2018 18:59:19 INFO  StartTopK:328 - source and target
+28-12-2018 19:19:44 INFO  StartTopK:328 - source and target
+28-12-2018 19:21:06 INFO  StartTopK:328 - source and target
+28-12-2018 19:22:04 INFO  StartTopK:328 - source and target
+28-12-2018 19:30:22 INFO  StartTopK:326 - source and target
+28-12-2018 19:33:03 INFO  StartTopK:326 - source and target
+28-12-2018 19:33:45 INFO  StartTopK:326 - source and target
+28-12-2018 19:36:15 INFO  StartTopK:326 - source and target
+28-12-2018 19:37:17 INFO  StartTopK:326 - source and target
+28-12-2018 19:39:18 INFO  StartTopK:326 - source and target
+29-12-2018 04:53:56 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 04:53:57 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 04:54:08 INFO  StartTopK:325 - source and target
+29-12-2018 04:54:46 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: SourceSelection$PathCache
+Caused by: an exception which occurred:
+	in object SourceSelection$PathCache@122635ef
+29-12-2018 04:55:33 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 04:55:34 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 04:55:40 INFO  StartTopK:325 - source and target
+29-12-2018 04:55:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: SourceSelection$PathCache
+Caused by: an exception which occurred:
+	in object SourceSelection$PathCache@27f3f512
+29-12-2018 04:56:32 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 04:56:33 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 04:56:40 INFO  StartTopK:325 - source and target
+29-12-2018 04:56:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@151ab2b9
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@27f3f512
+	in object SourceSelection$PathCache@27f3f512
+29-12-2018 05:05:21 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:05:22 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:05:23 INFO  StartTopK:330 - source and target
+29-12-2018 05:05:36 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@2ac519dc
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@f238e4f
+	in object SourceSelection$PathCache@f238e4f
+29-12-2018 05:08:46 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:08:46 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:08:47 INFO  StartTopK:330 - source and target
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@736048ed
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@48cd9a2c
+	in object SourceSelection$PathCache@48cd9a2c
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:48 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:49 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:08:50 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:11 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:10:12 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:10:13 INFO  StartTopK:330 - source and target
+29-12-2018 05:10:13 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: SourceSelection
+Caused by: an exception which occurred:
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@48cd9a2c
+	in object SourceSelection$PathCache@48cd9a2c
+29-12-2018 05:10:13 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:13 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:14 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:10:15 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:15 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:11:16 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:11:17 INFO  StartTopK:330 - source and target
+29-12-2018 05:11:17 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@736048ed
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@48cd9a2c
+	in object SourceSelection$PathCache@48cd9a2c
+29-12-2018 05:11:17 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:11:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:41 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:14:41 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:14:42 INFO  StartTopK:330 - source and target
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@36b310aa
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@2eaef76d
+	in object SourceSelection$PathCache@2eaef76d
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:43 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:14:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:51 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:15:51 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+29-12-2018 05:15:52 INFO  StartTopK:330 - source and target
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@36b310aa
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@2eaef76d
+	in object SourceSelection$PathCache@2eaef76d
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:53 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:54 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:15:55 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:17:00 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:17:00 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0.Alpha2
+29-12-2018 05:17:02 INFO  StartTopK:330 - source and target
+29-12-2018 05:17:19 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@30bf26df
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@67e0ff3a
+	in object SourceSelection$PathCache@67e0ff3a
+29-12-2018 05:21:42 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:21:42 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0.Alpha2
+29-12-2018 05:21:44 INFO  StartTopK:330 - source and target
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@35342d2f
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@2b98b3bb
+	in object SourceSelection$PathCache@2b98b3bb
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:44 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:21:45 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:15 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+29-12-2018 05:26:16 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0.Alpha2
+29-12-2018 05:26:17 INFO  StartTopK:330 - source and target
+29-12-2018 05:26:17 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@35342d2f
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@2b98b3bb
+	in object SourceSelection$PathCache@2b98b3bb
+29-12-2018 05:26:17 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+29-12-2018 05:26:18 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:07 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 10:14:07 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'N/A' 10.0.0.Alpha2
+30-12-2018 10:14:09 INFO  StartTopK:330 - source and target
+30-12-2018 10:14:09 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@35342d2f
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@2b98b3bb
+	in object SourceSelection$PathCache@2b98b3bb
+30-12-2018 10:14:09 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:10 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:14:11 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:26 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 10:15:26 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 10:15:27 INFO  StartTopK:330 - source and target
+30-12-2018 10:15:27 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+Caused by: org.infinispan.commons.marshall.NotSerializableException: org.infinispan.cache.impl.EncoderCache
+Caused by: an exception which occurred:
+	in field SourceSelection.cacheDB
+	in object SourceSelection@736048ed
+	in field SourceSelection$PathCache.this$0
+	in object SourceSelection$PathCache@48cd9a2c
+	in object SourceSelection$PathCache@48cd9a2c
+30-12-2018 10:15:27 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:27 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:27 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:28 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3041/d2/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3040/d1/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:15:29 ERROR InvocationContextInterceptor:127 - ISPN000136: Error executing command PutKeyValueCommand, writing keys [http://localhost:3042/d3/query]
+org.infinispan.commons.marshall.NotSerializableException: Object of type class java.util.ArrayList expected to be marshallable
+30-12-2018 10:23:23 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 10:23:23 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 10:23:25 INFO  StartTopK:330 - source and target
+30-12-2018 10:24:28 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 10:24:28 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 10:24:30 INFO  StartTopK:330 - source and target
+30-12-2018 10:30:39 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 10:30:39 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 10:30:41 INFO  StartTopK:330 - source and target
+30-12-2018 11:38:21 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 11:38:22 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 11:38:23 INFO  StartTopK:330 - source and target
+30-12-2018 13:37:35 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:37:35 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:37:37 INFO  StartTopK:330 - source and target
+30-12-2018 13:42:14 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:42:14 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:42:16 INFO  StartTopK:330 - source and target
+30-12-2018 13:42:39 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:42:39 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:42:41 INFO  StartTopK:330 - source and target
+30-12-2018 13:43:21 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:43:21 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:43:22 INFO  StartTopK:330 - source and target
+30-12-2018 13:44:46 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:44:46 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:44:47 INFO  StartTopK:330 - source and target
+30-12-2018 13:45:13 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:45:14 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:45:15 INFO  StartTopK:330 - source and target
+30-12-2018 13:45:21 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:45:22 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:45:23 INFO  StartTopK:330 - source and target
+30-12-2018 13:48:39 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 13:48:39 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 13:48:41 INFO  StartTopK:330 - source and target
+30-12-2018 14:01:22 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:01:22 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:01:24 INFO  StartTopK:330 - source and target
+30-12-2018 14:05:38 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:05:38 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:05:39 INFO  StartTopK:330 - source and target
+30-12-2018 14:06:05 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:06:05 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:06:06 INFO  StartTopK:330 - source and target
+30-12-2018 14:06:18 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:06:18 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:06:19 INFO  StartTopK:330 - source and target
+30-12-2018 14:07:29 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:07:29 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:07:30 INFO  StartTopK:330 - source and target
+30-12-2018 14:07:36 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:07:36 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:07:38 INFO  StartTopK:330 - source and target
+30-12-2018 14:08:00 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:08:00 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:08:01 INFO  StartTopK:330 - source and target
+30-12-2018 14:08:24 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:08:24 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:08:25 INFO  StartTopK:330 - source and target
+30-12-2018 14:08:35 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:08:35 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:08:36 INFO  StartTopK:330 - source and target
+30-12-2018 14:14:02 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:14:03 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:14:04 INFO  StartTopK:331 - source and target
+30-12-2018 14:14:23 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:14:23 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:14:24 INFO  StartTopK:331 - source and target
+30-12-2018 14:14:30 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:14:30 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:14:31 INFO  StartTopK:331 - source and target
+30-12-2018 14:14:37 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:14:37 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:14:39 INFO  StartTopK:331 - source and target
+30-12-2018 14:16:35 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:16:35 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:18:33 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:18:34 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:18:37 INFO  StartTopK:329 - source and target
+30-12-2018 14:29:37 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:29:37 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:29:40 INFO  StartTopK:329 - source and target
+30-12-2018 14:32:40 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:32:40 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:32:43 INFO  StartTopK:329 - source and target
+30-12-2018 14:33:15 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:33:16 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:33:18 INFO  StartTopK:329 - source and target
+30-12-2018 14:41:20 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:41:20 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:41:23 INFO  StartTopK:329 - source and target
+30-12-2018 14:51:09 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 14:51:10 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 14:51:12 INFO  StartTopK:329 - source and target
+30-12-2018 15:15:36 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 15:15:36 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 15:15:39 INFO  StartTopK:329 - source and target
+30-12-2018 15:34:14 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 15:34:14 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 15:34:16 INFO  StartTopK:331 - source and target
+30-12-2018 15:34:26 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 15:34:26 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 15:34:27 INFO  StartTopK:331 - source and target
+30-12-2018 15:34:34 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 15:34:34 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 15:34:35 INFO  StartTopK:331 - source and target
+30-12-2018 15:34:56 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 15:34:57 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 15:34:58 INFO  StartTopK:331 - source and target
+30-12-2018 16:32:58 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 16:32:59 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 16:33:00 INFO  StartTopK:331 - source and target
+30-12-2018 16:33:05 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+30-12-2018 16:33:05 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+30-12-2018 16:33:06 INFO  StartTopK:331 - source and target
+31-12-2018 13:34:15 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:34:15 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:34:17 INFO  StartTopK:331 - source and target
+31-12-2018 13:34:22 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:34:22 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:34:23 INFO  StartTopK:331 - source and target
+31-12-2018 13:34:27 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:34:28 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:34:29 INFO  StartTopK:331 - source and target
+31-12-2018 13:37:24 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:37:24 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:37:27 INFO  StartTopK:329 - source and target
+31-12-2018 13:40:17 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:40:17 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:40:20 INFO  StartTopK:329 - source and target
+31-12-2018 13:45:54 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:45:54 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:45:57 INFO  StartTopK:329 - source and target
+31-12-2018 13:56:09 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 13:56:09 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 13:56:11 INFO  StartTopK:329 - source and target
+31-12-2018 14:02:55 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 14:02:56 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 14:02:58 INFO  StartTopK:329 - source and target
+31-12-2018 14:05:59 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 14:05:59 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 14:06:01 INFO  StartTopK:329 - source and target
+31-12-2018 14:07:31 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 14:07:31 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 14:07:33 INFO  StartTopK:329 - source and target
+31-12-2018 14:17:52 WARN  DefaultCacheManager:243 - ISPN000435: Cache manager initialized with a default cache configuration but without a name for it. Set it in the GlobalConfiguration.
+31-12-2018 14:17:52 INFO  GlobalComponentRegistry:257 - ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.5.Final
+31-12-2018 14:17:55 INFO  StartTopK:329 - source and target

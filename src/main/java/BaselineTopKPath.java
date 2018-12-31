@@ -92,30 +92,55 @@ public class BaselineTopKPath extends TopKAlgorithm implements  ModelInit{
 
 
 	}
-int count=0;
+
+	static int count=0;
 	private void visit(TNode current, boolean backword) throws Exception {
-	
+		count=0;
 		TNode next = null;
 		
 		for(StmtIterator stmtI= gIdx.listStatements(gIdx.getResource(current.vertex.toString()), null, (RDFNode)null);stmtI.hasNext(); ){//gIdx.getResource(vertex.toString()).listProperties();stmtI.hasNext();){
    		Triple t = stmtI.next().asTriple();
 			if (t.getObject().isLiteral())
 				continue;
-
-			if (current.visitedEdge(t)) {
-				continue;
-			}
-			if (current.visiteddVertex(t)) {
-				continue;
-			}
-
 			boolean doNotQueue = false;
-			if (t.getObject().equals(startNode)) {// break;
-				doNotQueue = true;
-				continue;
+			
+			if (current.visitedEdge(t)) {
+			
+			
+					continue;
+			
+				
+			}
+			
+			
+			
+			if (current.visiteddVertex(t)) {
+				
+				if (t.getObject() != targetNode) {
+					doNotQueue = false;
+					//continue;
+				}else{doNotQueue = true;}
+				
+				
+				
+				
+				//continue;
 			}
 
 			next = TNode.createNode(t.getObject(), t.getPredicate(), current);
+			
+			if (!doNotQueue) {
+				q.add(next);
+			}
+			
+			
+			
+			/*if (t.getObject().equals(startNode)) {// break;
+				doNotQueue = true;
+				continue;
+			}*/
+
+			
 
 			if (t.getObject().equals(targetNode) && (current.filterEdge == null || t.getPredicate() == filterEdge)) {
 				doNotQueue = true;
@@ -126,8 +151,14 @@ int count=0;
 				
 				}else{
 					p.reverse();
+					solutions.add(p);
 				}
-				boolean flag = false;
+				
+				
+				
+				//q.add(next);
+				
+			/*	boolean flag = false;
 
 				ListIterator<?> it = p.vertexList().listIterator();
 				Object[] arry = p.vertexList().toArray();
@@ -138,17 +169,18 @@ int count=0;
 								arry[it.nextIndex()].toString());
 						if (flag)
 							solutions.add(p);
+					
 					}
 					it.next();
-				}
+				}*/
 
-				//if (flag)
-					//solutions.add(p);
+				
+					
 			}
-
+/*
 			if (!doNotQueue) {
 				q.add(next);
-			}
+			}*/
 		}
 
 	}
@@ -229,10 +261,15 @@ int count=0;
 			return new TNode(vertex,incomingEdge, prev);
 		}
 
+		//int cnt=0;
 		boolean visitedEdge(Triple t) {
 			if (prev != null) {
-				return vertex.equals(t.getObject()) && incomingEdge.equals(t.getPredicate())
+				 boolean visited=vertex.equals(t.getObject()) && incomingEdge.equals(t.getPredicate())
 						&& prev.vertex.equals(t.getSubject()) || prev.visitedEdge(t);
+				 //System.err.println(visited);
+				 if(visited)
+					 count++;
+				 return visited;
 			}
 			return false;
 		}

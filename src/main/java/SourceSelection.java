@@ -2,6 +2,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -10,10 +11,12 @@ import java.util.LinkedHashMap;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -27,18 +30,35 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.system.StreamRDFWriter.WriterRegistry;
 import org.insight.centre.RDFizePaths.PathRDFizer;
+import org.insight.centre.cache.PathCache;
+import org.apache.jena.shared.uuid.JenaUUID;
+import org.infinispan.Cache;
 
-public class SourceSelection {
 
-    String sourceNode, targetNoe;
+public class SourceSelection implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7886019565297757368L;
+	String sourceNode, targetNoe;
     static Model mdl;
+    int K=10;
+    
+    Map<String, Set<String>> pathWithDatasets;
+    Cache<String, List<PathCache>> cacheDB;
     
 
-    public SourceSelection(Model mdl,String sourceNode, String targetNode) {
+    public SourceSelection(Model mdl,String sourceNode, String targetNode, Map<String, Set<String>> pathWithDatasets, Cache<String, List<PathCache>> cacheDB2 ) {
         this.sourceNode = sourceNode;
         this.targetNoe = targetNode;
+        this.pathWithDatasets=pathWithDatasets;
         this.mdl=mdl;
+        this.cacheDB=cacheDB2;
+      
+      
 
     }
 
@@ -52,11 +72,13 @@ public class SourceSelection {
     	ExecutorService pool= Executors.newFixedThreadPool(50);
     	
         List <?> lstOfEnpds = new ArrayList < > (pList.vertSeq);
+        
+        System.err.println(lstOfEnpds);
         int count = 0;
         // first dataset from the path list
         String curDataset = lstOfEnpds.get(0).toString();
         //old- String Src = this.sourceNode; // original source
-        List<String> Src= new ArrayList<String>();
+        Set<String> Src= new HashSet<String>();
         Src.add(this.sourceNode);
         
         String target = "";
@@ -66,7 +88,7 @@ public class SourceSelection {
         // sublist start from 1 index as 0 index used to get first dataset
         List <?> tempList = lstOfEnpds.subList(1, lstOfEnpds.size());
 
-        List <String> targets=null; 
+        Set <String> targets=null; 
         while (count <= tempList.size()) {
 
         	 boolean addPath=true;
@@ -75,61 +97,97 @@ public class SourceSelection {
                 String nextDataset = tempList.get(count).toString();
                 // get the nodes where two datasets are connected through
               //  Iterator<String> connectThrougRs = nodesWithProp(mdlEndpConnectedVia(curDataset, nextDataset), curDataset).iterator();
-                ResultSet connectThrougRs= mdlEndpConnectedVia(curDataset, nextDataset);
-                Set<String> connThr= new HashSet<String>();
+                ResultSet connectThrougRs=null;
+                 
+                 QueryExecution exec= mdlEndpConnectedVia(curDataset, nextDataset);
+                 connectThrougRs=exec.execSelect();
+               Set<String> connThr= new HashSet<String>();
                while(connectThrougRs.hasNext()){
             	   connThr.add(connectThrougRs.next().get("?o").toString());
                }
-                
+               
+               exec.close();
+               
                 List < String > pathRetrieved = new ArrayList < > ();
-                targets= new ArrayList<>();
+                targets= new HashSet<>();
                
                int conThSize=1;
                for(String src: Src){
             	  // System.out.println(src);
             	   //check if source does exist in the current dataset
-            	   // if doesnt don need to make any request since no benefit of connectedThrough
+            	   // if doesnt, no need to make any request since no benefit of connectedThrough
           if(checkIfExist (src, curDataset)){	   
             	//while(connectThrougRs.hasNext()){
             	for (String common: connThr) {
                     target = common;;
-                	//target=connectThrougRs.next().get("?o").toString();
                     targets.add(target); // add each target to a targets List
+                  
                     
-                    // get the path either from local or remote endpoints
-                    //System.out.println(curDataset+conThSize++);
-                  // System.err.println("endpoint:="+curDataset+" source: "+ src+" targer: "+target);
+                    
                   if(target.equals(targetNoe)){
-                    if(src.equals(sourceNode)){
-                    	Future<List<String>> future1= pool.submit(new PathRequest(curDataset, src, target, 2));
+                   // if(src.equals(sourceNode)){
+
+                    	Future<List<String>> future1= pool.submit(new PathRequest(curDataset, src, target, K));
                     	
-						pathRetrieved.addAll(future1.get());
-                    }
+                	  	List<String> lst1 = future1.get();
+                    	
+						pathRetrieved.addAll(lst1);
+                    //}
                     addPath=false;
-                   continue;
+                  // continue;
                    }else{
                    // pathRetrieved.addAll(getPaths(curDataset, Src, target, 2));
                     try {
-                    	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, 2));
                     	
-						pathRetrieved.addAll(future.get());
+                    	if(checkInCache(curDataset,src, target)==true)
+                    		continue;
+                 	   
+                    	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, K));
+                    	
+                    	List<String> lst = future.get();
+                    	
+						pathRetrieved.addAll(lst);
+						
+						if(lst.isEmpty()){
+						
+								
+							PathCache cache=new PathCache(src,target,false);
+							if (!cacheDB.containsKey(curDataset)){
+								List<PathCache> pathCacheLst= new ArrayList<>();
+								pathCacheLst.add(cache);
+								
+								cacheDB.put(curDataset, pathCacheLst);
+								}
+							else{
+							cacheDB.get(curDataset).add(cache);
+							}
+							
+						}
 						
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+                    
                    }
+                  
+                  
                 } // end of connectedThrough while loop 
               } else{continue;}
             } // end of Src loop
-               // System.out.println("size: "+ conThSize);
-               // if (!map.containsKey(curDataset)) {
+
+               if (!pathRetrieved.isEmpty()) {
                     List < PathMerger > lst = new ArrayList < > ();
                     LinkedList < String > set = new LinkedList < > (map.keySet());
                     lst.add(new PathMerger(curDataset, set, pathRetrieved, targets));
+                    
+                    if(map.containsKey(curDataset)){
+                    
+                    	map.get(curDataset).addAll(lst);
+                    }else{
                     map.put(curDataset, lst);
-
-                //}
+                    }
+                }
                 curDataset = nextDataset;
                 //Src = !targets.isEmpty()?targets:Src;
                 Src = targets;
@@ -139,24 +197,44 @@ public class SourceSelection {
                 target = this.targetNoe; // original target
                for(String src: Src) { 
   
-                List < String > pathRet = getPaths(curDataset, src, target, 2);
-                pathRetrieved.addAll(pathRet);
+            	if(checkInCache(curDataset,src, target)==true)
+               		continue;
+            	
+            	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, K));
+            	
+            	List<String> lst = future.get();
+            	pathRetrieved.addAll(lst);
+				
+				if(lst.isEmpty()){
+					PathCache cache=new PathCache(src,target,false);
+					if (!cacheDB.containsKey(curDataset)){
+						List<PathCache> pathCacheLst= new ArrayList<>();
+						pathCacheLst.add(cache);
+						
+						cacheDB.put(curDataset, pathCacheLst);
+						}
+					else{
+					cacheDB.get(curDataset).add(cache);
+					}
+					
+					
+				}
+				
 
                }
-        	
-                Future<List<String>> future2= pool.submit(new PathRequest(curDataset, this.sourceNode, this.targetNoe, 2));
-                   	
-				pathRetrieved.addAll(future2.get());
-                  
-                  
-        	   
-                //if (!map.containsKey(curDataset)) {
+ 
+               if (!pathRetrieved.isEmpty()) {
                     List < PathMerger > lst = new ArrayList < > ();
                     LinkedList < String > set = new LinkedList < > (map.keySet());
                     lst.add(new PathMerger(curDataset, set, pathRetrieved, targets));
 
+                    if(map.containsKey(curDataset)){
+                        
+                    	map.get(curDataset).addAll(lst);
+                    }else{
                     map.put(curDataset, lst);
-                //}
+                    }
+                }
             //} // end of for loop 
             }
 
@@ -169,6 +247,30 @@ pool.shutdown();
 
     }
 
+    private boolean checkInCache (String Key, String src, String target){
+    	//System.err.println("dataset is: "+Key+"  "+src+"--"+target);
+    	boolean boolVal = false;
+    	
+		if (cacheDB.containsKey(Key)) {
+			List<PathCache> existingDataset = cacheDB.get(Key);
+
+			for (PathCache cach : existingDataset) {
+
+				//System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
+				if(cach.src.equals(src) && cach.target.equals(target) && cach.passOrFail==false){
+					boolVal= true;
+					//System.err.println("true");
+					break;
+				}
+		}
+		} else {
+			
+			boolVal= false;
+		}
+    	
+		return boolVal;
+    }
+    
     /**
      * make the federated request
      * 
@@ -235,19 +337,25 @@ pool.shutdown();
      * @return this method returns the nodes through which two datasets are
      *         interlinked in index file
      */
-    protected static ResultSet mdlEndpConnectedVia(String curDataset, String nextDataset) {
+    protected static QueryExecution mdlEndpConnectedVia(String curDataset, String nextDataset) {
 
       //  Model modelTemp = ModelFactory.createDefaultModel();
       //  InputStream in = FileManager.get().open("data/index-2.nt");
 
      //   modelTemp.read( in , null, "N-TRIPLE");
 
-    	 String query = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE { { <"+curDataset+"> feds:connectedThrough ?o. <"+nextDataset+"> feds:connectedThrough ?o.} UNION {<"+nextDataset+">feds:connectedThrough ?o. <"+curDataset+"> feds:connectedThrough ?o.} }";
-
-        QueryExecution qryExec = QueryExecutionFactory.create(query, mdl);
-        
-
-        return qryExec.execSelect();
+    	Query query=null;
+    	QueryExecution qryExec=null;
+    	ResultSet rs=null;
+    	 //String queryStr= "prefix feds: <http://vocab.org.centre.insight/feds#> Select distinct ?o where{ <"+curDataset+"> feds:connectedTo <"+nextDataset+">. <"+nextDataset+">  feds:connectedThrough  ?o}";
+    	 
+    	 String queryStr = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE {  <"+curDataset+"> feds:connectedThrough ?o. <"+nextDataset+"> feds:connectedThrough ?o. }";
+    	 query=QueryFactory.create(queryStr);
+    	 qryExec = QueryExecutionFactory.create(query, mdl);
+    	// rs= qryExec.execSelect();
+    	//qryExec.close();
+       // qryExec.close();
+        return qryExec;
 
     }
 
@@ -255,6 +363,15 @@ pool.shutdown();
 
     	/* datasets involved in the contribution of a complete path*/
     	List<String> dtsContributed= new ArrayList<>();
+    	
+    	Set<String> curPathLst1stDataset= new HashSet<>();
+    	Set<String> curPathLst2ndDataset= new HashSet<>();
+    	Map<String, String> pPaths= new HashMap<>();
+    	Set<String> dataset= new HashSet<>();
+    	
+    	JenaUUID uuid = JenaUUID.generate();
+    	
+    	
     	
     	
         for (Entry < String, List < PathMerger >> build: map.entrySet()) {
@@ -266,15 +383,38 @@ pool.shutdown();
                 if (pathBuild.prvSet.isEmpty()) {
 
                     for (String path: pathBuild.pathRetrieved) {
-                        if (path.endsWith(this.targetNoe)){
+                        if (path.startsWith(this.sourceNode) && path.endsWith(this.targetNoe)){
+                        	
+                        	Set<String> dataset1= new HashSet<>();
+                    		dataset.add(pathBuild.curDataset);
+                    		
+                        	if(pathWithDatasets.containsKey(path) && pathWithDatasets.containsValue(dataset1)){
+                        		
+                        		System.out.println("dataset already existed against this path");
+                        	}else{
+                        		
+                        		
+                        		pathWithDatasets.put(path, dataset1);
+                        		 savePaths(path);
+                        		 System.out.println(path );
+                                 Map<String, String> fPaths= new HashMap<>();
+                                 fPaths.put(pathBuild.curDataset, path);
+                                 
+                                 PathRDFizer.RDFizeAndSave(uuid, path, fPaths, pathFirstNode(path), pathLastNode(path), true);
+
+                        		
+                        	}
+                        	
+                        	/*if(!curPathLst1stDataset.contains(path)){
+                        		curPathLst1stDataset.add(path);
                             System.out.println("path from : "+pathBuild.curDataset+"="+path);
                             savePaths(path);
                            
                             Map<String, String> fPaths= new HashMap<>();
                             fPaths.put(pathBuild.curDataset, path);
                             
-                        PathRDFizer.RDFizeAndSave(path, fPaths, pathFirstNode(path), pathLastNode(path), true);
-                       
+                            PathRDFizer.RDFizeAndSave(uuid, path, fPaths, pathFirstNode(path), pathLastNode(path), true);
+                        	}*/
                         
                         }
                     }
@@ -283,68 +423,144 @@ pool.shutdown();
               //  if(!pathBuild.pathRetrieved.isEmpty()){
                 if (!pathBuild.prvSet.isEmpty()) {
 
+                	
+                	 
                     while (!pathBuild.prvSet.isEmpty()) {
                         String prevDataset = pathBuild.prvSet.removeLast();
-                        int i = 0;
+                       
 
-                        Iterator < String > iter = pathBuild.pathRetrieved.iterator();
+                        ListIterator < String > iter = pathBuild.pathRetrieved.listIterator();
                         while (iter.hasNext()) {
                             String currentPath = iter.next();
 
                             if(currentPath.startsWith(this.sourceNode) && currentPath.endsWith(this.targetNoe))
                             	{
-                            	//System.out.println("single hope from: "+pathBuild.curDataset+" path:="+ currentPath);
-                                  savePaths(currentPath);
+                            	
+                            	Set<String> dataset1= new HashSet<>();
+                        		dataset.add(pathBuild.curDataset);
+                        		
+                            	if(pathWithDatasets.containsKey(currentPath) && pathWithDatasets.containsValue(dataset1)){
+                            		
+                            		System.out.println("dataset already existed against this path");
+                            	}else{
+                            		
+                            		
+                            		pathWithDatasets.put(currentPath, dataset1);
+                            		System.out.println(currentPath );
+                            		savePaths(currentPath);
+                                    Map<String, String> fPaths= new HashMap<>();
+                                    fPaths.put(pathBuild.curDataset, currentPath);
+                                    
+                                    PathRDFizer.RDFizeAndSave(uuid,currentPath, fPaths, pathFirstNode(currentPath), pathLastNode(currentPath),true);
+                                    
+                            	}
+                            	
+                            	
                                 
+                            /*    if(!curPathLst2ndDataset.contains(currentPath)){
+                                	System.err.println("path from : "+pathBuild.curDataset+"="+currentPath);
+                                	curPathLst2ndDataset.add(currentPath);
+                                  savePaths(currentPath);
                                   Map<String, String> fPaths= new HashMap<>();
                                   fPaths.put(pathBuild.curDataset, currentPath);
                                   
-                                  PathRDFizer.RDFizeAndSave(currentPath, fPaths, pathFirstNode(currentPath), pathLastNode(currentPath),true);
-                                  
+                                  PathRDFizer.RDFizeAndSave(uuid,currentPath, fPaths, pathFirstNode(currentPath), pathLastNode(currentPath),true);
+                                } */
+                                
                             	}
                             
-                            for (String previousPath: map.get(prevDataset).get(i).pathRetrieved) { 
+                             List<PathMerger> keyV = map.get(prevDataset);
+                               
+                             for(Iterator<PathMerger> iterPMerger= keyV.iterator();iterPMerger.hasNext();){
+                            	 
+                            	 PathMerger pathMerger = iterPMerger.next();
+                            	 List<String> previousPathList = pathMerger.pathRetrieved;
+                            	 	
+                            	 for (String previousPath: previousPathList) {
+                            	
+                            	
+                            	
+                            	
                                 if (!currentPath.endsWith(this.targetNoe) && !previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath))) {
                                 
-                                	Map<String, String> pPaths= new HashMap<>();
+                                	
                                 	
                                 	String concate= previousPath.concat("----").concat(currentPath);
                                 	//System.out.println(concate);
                                 	//System.err.println(pathBuild.pathRetrieved.indexOf(currentPath));
                                 	//System.out.println(pathBuild.pathRetrieved.get(pathBuild.pathRetrieved.indexOf(currentPath)));
-                                
+                                if(pathBuild.pathRetrieved.contains(currentPath)){
                                 	pathBuild.pathRetrieved.set(pathBuild.pathRetrieved.indexOf(currentPath), concate);
-                                
+                                }else{
+                                	
+                                	
+                                	iter.add(concate);
+                                }
                                 	pPaths.put(prevDataset, previousPath);
                                 	pPaths.put(pathBuild.curDataset, currentPath);
-                             
-                                	PathRDFizer.RDFizeAndSave(concate, pPaths,pathFirstNode(concate), pathLastNode(concate),false);
-                        
-                                } else {
                                 	
-                                  
-									String p="";
-									if (previousPath.startsWith(this.sourceNode) &&!previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath)) && currentPath.endsWith(this.targetNoe))
-									{p =previousPath.concat("----").concat(currentPath);
+                                	
+                                
+	                        		dataset.add(prevDataset);
+	                        		dataset.add(pathBuild.curDataset);
+	                        		
+	                        		pathWithDatasets.put(currentPath, dataset);
+                             
+                                	//PathRDFizer.RDFizeAndSave(uuid,concate, pPaths,pathFirstNode(concate), pathLastNode(concate),false);
+                        
+                                } else if (previousPath.startsWith(this.sourceNode) &&!previousPath.endsWith(this.targetNoe) && currentPath.startsWith(pathLastNode(previousPath)) && currentPath.endsWith(this.targetNoe))
+									{
+										String p="";
+										p =previousPath.concat("----").concat(currentPath);
                                     
-									Map<String, String> pPaths= new HashMap<>();
 									
-										System.out.println(p);
+									
+									//Set<String> dataset= new HashSet<>();
+	                        		dataset.add(pathBuild.curDataset);
+	                        		
+	                        		System.err.println(pathWithDatasets.containsKey(p));
+	                        		
+	                            	if(pathWithDatasets.containsKey(p) && pathWithDatasets.containsValue(dataset)){
+	                            		
+	                            		if(pathWithDatasets.values().containsAll(dataset)){
+	                            			System.err.println("path and dataset are equal");
+	                            		}
+	                            		
+	                            		System.out.println("dataset already existed against this path");
+	                            	}else{
+	                            		
+	                            		
+	                            		pathWithDatasets.put(p, dataset);
+	                            		
+	                            		System.out.println(p);
 										savePaths(p.toString());
-										pPaths.put(prevDataset, previousPath);
+										//pPaths.put(prevDataset, previousPath);
 										pPaths.put(pathBuild.curDataset, currentPath);
 										
 										
-										PathRDFizer.RDFizeAndSave(p, pPaths, pathFirstNode(p), pathLastNode(p),true);
-									
+										PathRDFizer.RDFizeAndSave(uuid,p, pPaths, pathFirstNode(p), pathLastNode(p),true);
 										
+	                            	}
+	                            	}else if(!previousPath.startsWith(this.sourceNode) && !currentPath.endsWith(this.targetNoe) 
+												&& previousPath.startsWith(pathLastNode(currentPath))){
+											
+										String p= "";
+										
+										p=currentPath.concat("----").concat(previousPath);
+										
+										if(p.startsWith(this.sourceNode)&&p.endsWith(this.targetNoe)){
+										System.out.println(p );
+										pPaths.put(pathBuild.curDataset, currentPath);	
+										PathRDFizer.RDFizeAndSave(uuid,p, pPaths, pathFirstNode(p), pathLastNode(p),true);
+										}
 									}
-                                }
+                                
 
                             }
-
+                        
+                        }// iteratorPMerger 
                         }
-                        i++;
+                       
 
                     }
                 }
@@ -400,13 +616,13 @@ pool.shutdown();
         LinkedList < String > prvSet = null;
         String curDataset = "";
         List < String > pathRetrieved = null;
-        List < String > connectedVia;
+        Set < String > connectedVia;
 
-        public PathMerger(String curDataset, LinkedList < String > prvSet, List < String > pathRetrieved,List < String > connectedVia) {
+        public PathMerger(String curDataset, LinkedList < String > prvSet, List < String > pathRetrieved,Set<String> targets) {
             this.prvSet = prvSet;
             this.curDataset = curDataset;
             this.pathRetrieved = pathRetrieved;
-            this.connectedVia = connectedVia;
+            this.connectedVia = targets;
         }
 
     }
@@ -437,5 +653,6 @@ pool.shutdown();
 
     	
     }
+
 
 }
