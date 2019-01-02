@@ -1,3 +1,4 @@
+package org.insight.centre.topk;
 
 
 import com.hp.hpl.jena.graph.Graph;

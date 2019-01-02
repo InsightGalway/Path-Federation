@@ -1,9 +1,11 @@
+package org.insight.centre.federation;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -16,7 +18,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -32,12 +36,14 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.riot.system.StreamRDFWriter.WriterRegistry;
 import org.insight.centre.RDFizePaths.PathRDFizer;
-import org.insight.centre.cache.PathCache;
+import org.insight.centre.topk.Path;
+
 import org.apache.jena.shared.uuid.JenaUUID;
 import org.infinispan.Cache;
+import org.infinispan.multimap.api.embedded.MultimapCache;
 
 
-public class SourceSelection implements Serializable {
+public class SourceSelection {
 
 	/**
 	 * 
@@ -48,15 +54,16 @@ public class SourceSelection implements Serializable {
     int K=10;
     
     Map<String, Set<String>> pathWithDatasets;
-    Cache<String, List<PathCache>> cacheDB;
+    MultimapCache<String, SourceSelection.PathCache> cacheDB;
     
 
-    public SourceSelection(Model mdl,String sourceNode, String targetNode, Map<String, Set<String>> pathWithDatasets, Cache<String, List<PathCache>> cacheDB2 ) {
+    public SourceSelection(Model mdl,String sourceNode, String targetNode, Map<String, Set<String>> pathWithDatasets, MultimapCache<String, PathCache> cacheDB2 ) {
         this.sourceNode = sourceNode;
         this.targetNoe = targetNode;
         this.pathWithDatasets=pathWithDatasets;
         this.mdl=mdl;
-        this.cacheDB=cacheDB2;
+        cacheDB=cacheDB2;
+
       
       
 
@@ -66,7 +73,7 @@ public class SourceSelection implements Serializable {
         return this;
     }
 
-    protected String startSourceSelection(Path pList) throws IOException, InterruptedException, ExecutionException {
+    public String startSourceSelection(Path pList) throws IOException, InterruptedException, ExecutionException {
 
 
     	ExecutorService pool= Executors.newFixedThreadPool(50);
@@ -102,16 +109,19 @@ public class SourceSelection implements Serializable {
                  QueryExecution exec= mdlEndpConnectedVia(curDataset, nextDataset);
                  connectThrougRs=exec.execSelect();
                Set<String> connThr= new HashSet<String>();
+               long start= System.currentTimeMillis();
                while(connectThrougRs.hasNext()){
             	   connThr.add(connectThrougRs.next().get("?o").toString());
                }
                
                exec.close();
+               long end= System.currentTimeMillis();
                
+               long tot= end-start;
+               System.out.println("total time for results iteration is: "+ tot); 
                 List < String > pathRetrieved = new ArrayList < > ();
                 targets= new HashSet<>();
-               
-               int conThSize=1;
+         
                for(String src: Src){
             	  // System.out.println(src);
             	   //check if source does exist in the current dataset
@@ -121,9 +131,7 @@ public class SourceSelection implements Serializable {
             	for (String common: connThr) {
                     target = common;;
                     targets.add(target); // add each target to a targets List
-                  
-                    
-                    
+                                        
                   if(target.equals(targetNoe)){
                    // if(src.equals(sourceNode)){
 
@@ -139,6 +147,7 @@ public class SourceSelection implements Serializable {
                    // pathRetrieved.addAll(getPaths(curDataset, Src, target, 2));
                     try {
                     	
+                    	
                     	if(checkInCache(curDataset,src, target)==true)
                     		continue;
                  	   
@@ -150,18 +159,11 @@ public class SourceSelection implements Serializable {
 						
 						if(lst.isEmpty()){
 						
-								
-							PathCache cache=new PathCache(src,target,false);
-							if (!cacheDB.containsKey(curDataset)){
-								List<PathCache> pathCacheLst= new ArrayList<>();
-								pathCacheLst.add(cache);
-								
-								cacheDB.put(curDataset, pathCacheLst);
-								}
-							else{
-							cacheDB.get(curDataset).add(cache);
-							}
-							
+
+							PathCache cache=null;cache=new PathCache(src,target,false);
+							System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
+							cacheDB.put(curDataset, cache);
+		               
 						}
 						
 					} catch (Exception e) {
@@ -205,20 +207,11 @@ public class SourceSelection implements Serializable {
             	List<String> lst = future.get();
             	pathRetrieved.addAll(lst);
 				
-				if(lst.isEmpty()){
-					PathCache cache=new PathCache(src,target,false);
-					if (!cacheDB.containsKey(curDataset)){
-						List<PathCache> pathCacheLst= new ArrayList<>();
-						pathCacheLst.add(cache);
-						
-						cacheDB.put(curDataset, pathCacheLst);
-						}
-					else{
-					cacheDB.get(curDataset).add(cache);
-					}
-					
-					
-				}
+            	if(lst.isEmpty()){
+    				PathCache cache=null;cache=new PathCache(src,target,false);
+    				System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
+    				cacheDB.put(curDataset, cache);
+               	}
 				
 
                }
@@ -246,23 +239,54 @@ pool.shutdown();
         return null;
 
     }
+	boolean ifExisted=false;
+    private boolean avoidDuplicatesInCache(String key, PathCache value){
+   
+    	ifExisted=false;
+    	if (cacheDB.containsKey(key) != null) {
+    	
+    	cacheDB.get(key).thenAccept(values-> {
+System.err.println("for key "+ values.size());
+			if(values.contains(value.src) && values.contains(value.target) && values.contains(value.passOrFail)){
+				System.err.println("already there");
+				System.out.println(value);
+				ifExisted= true;
+				
+			}else{
+				System.out.println("new dataset is: "+key+"  "+value.src+"--"+value.target+"--"+value.passOrFail);
+				cacheDB.put(key, value);
 
+			}	
+			});
+    }
+    	
+    	return ifExisted;
+    }
     private boolean checkInCache (String Key, String src, String target){
     	//System.err.println("dataset is: "+Key+"  "+src+"--"+target);
     	boolean boolVal = false;
     	
-		if (cacheDB.containsKey(Key)) {
-			List<PathCache> existingDataset = cacheDB.get(Key);
+		if (cacheDB.containsKey(Key) != null) {	
+			 CompletableFuture<Collection<PathCache>> datasetAsKey = cacheDB.get(Key);
+			 
+			 Collection<PathCache> existingDataset;
+			try {
+				existingDataset = datasetAsKey.get();
+				for (PathCache cach : existingDataset) {
 
-			for (PathCache cach : existingDataset) {
+					//System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
+					if(cach.src.equals(src) && cach.target.equals(target) && cach.passOrFail==false){
+						boolVal= true;
+						System.err.println("true");
+						break;
+					}
+			}
+			} catch (InterruptedException | ExecutionException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
-				//System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
-				if(cach.src.equals(src) && cach.target.equals(target) && cach.passOrFail==false){
-					boolVal= true;
-					//System.err.println("true");
-					break;
-				}
-		}
+	
 		} else {
 			
 			boolVal= false;
@@ -474,9 +498,14 @@ pool.shutdown();
                              for(Iterator<PathMerger> iterPMerger= keyV.iterator();iterPMerger.hasNext();){
                             	 
                             	 PathMerger pathMerger = iterPMerger.next();
-                            	 List<String> previousPathList = pathMerger.pathRetrieved;
-                            	 	
-                            	 for (String previousPath: previousPathList) {
+                            	 List<String> prevPLst= new CopyOnWriteArrayList<>(pathMerger.pathRetrieved);
+                            	 System.err.println("size of temlist is: "+ prevPLst.size());
+                            	// for(ListIterator<String> prevPIter=tempLst.listIterator();prevPIter.hasNext();){
+                            		 
+                            		// String previousPath= prevPIter.next();
+                            	 //}
+                            	
+                            	 for (String previousPath: prevPLst) {
                             	
                             	
                             	
@@ -489,6 +518,7 @@ pool.shutdown();
                                 	//System.out.println(concate);
                                 	//System.err.println(pathBuild.pathRetrieved.indexOf(currentPath));
                                 	//System.out.println(pathBuild.pathRetrieved.get(pathBuild.pathRetrieved.indexOf(currentPath)));
+                                
                                 if(pathBuild.pathRetrieved.contains(currentPath)){
                                 	pathBuild.pathRetrieved.set(pathBuild.pathRetrieved.indexOf(currentPath), concate);
                                 }else{
@@ -558,6 +588,7 @@ pool.shutdown();
 
                             }
                         
+                            	 
                         }// iteratorPMerger 
                         }
                        
@@ -654,5 +685,22 @@ pool.shutdown();
     	
     }
 
+    public static class PathCache implements Serializable{
 
+
+    	/**
+		 * 
+		 */
+		private static final long serialVersionUID = 8011637879899586076L;
+		
+		 String src, target;
+    	 boolean passOrFail;
+    	
+    	public PathCache(String src, String target, boolean bool) {
+    		this.src=src; this.target=target;this.passOrFail=bool;
+    	}
+    	
+    }
+    
 }
+

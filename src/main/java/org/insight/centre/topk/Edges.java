@@ -1,3 +1,4 @@
+package org.insight.centre.topk;
 
 /**
  * Created by vadim on 18.05.16.

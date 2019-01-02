@@ -1,3 +1,4 @@
+package org.insight.centre.topk;
 
 import org.apache.jena.graph.Node;
 import org.apache.jena.graph.Triple;

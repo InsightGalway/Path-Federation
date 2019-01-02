@@ -1,3 +1,4 @@
+package org.insight.centre.federation;
 
 
 import java.util.ArrayList;

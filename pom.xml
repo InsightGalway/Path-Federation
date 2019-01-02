@@ -64,11 +64,21 @@
 
 
     <dependencies>
-<dependency>
+<!-- <dependency>
     <groupId>org.infinispan</groupId>
     <artifactId>infinispan-core</artifactId>
     <version>9.4.5.Final</version>
+</dependency> -->
+
+
+
+<dependency>
+    <groupId>org.infinispan</groupId>
+    <artifactId>infinispan-multimap</artifactId>
+    <version>10.0.0.Alpha2</version>
 </dependency>
+
+
 
 
 

@@ -1,3 +1,4 @@
+package org.insight.centre.topk;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +28,10 @@ import org.infinispan.Cache;
 import org.infinispan.configuration.cache.Configuration;
 import org.infinispan.configuration.cache.ConfigurationBuilder;
 import org.infinispan.manager.DefaultCacheManager;
+import org.infinispan.multimap.api.embedded.MultimapCache;
 import org.insight.centre.cache.CacheClass;
-import org.insight.centre.cache.PathCache;
+import org.insight.centre.cache.PathCache1;
+import org.insight.centre.federation.SourceSelection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,13 +56,13 @@ public class StartTopK implements Serializable {
 	static boolean backword=false, forward=true;
 	
 	static Model mainModel= ModelFactory.createDefaultModel();
-	
+
 	
 	boolean  flagConnVia;
     @SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException, NotFoundException, InterruptedException, ExecutionException {
 	            
-    	Cache<String, List<PathCache>> cacheDB=CacheClass.infinispan();
+    	MultimapCache<String, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
     	
     	InputStream in= FileManager.get().open("data/index-2-disgenet-complete.nt");
     	mainModel.read(in,null,"N-TRIPLE");
@@ -72,11 +75,11 @@ public class StartTopK implements Serializable {
        
         List<Endpoint> involvedEndp= new ArrayList<>();
        
-     involvedEndp.add(new Endpoint("http://localhost:3040/d1/query", "http://d1.graph.sample"));
+   /*  involvedEndp.add(new Endpoint("http://localhost:3040/d1/query", "http://d1.graph.sample"));
         involvedEndp.add( new Endpoint("http://localhost:3041/d2/query","http://d2.graph.sample"));
         involvedEndp.add(new Endpoint("http://localhost:3042/d3/query","http://d3.graph.sample"));
        // involvedEndp.add(new Endpoint("http://localhost:3043/d4/query", "http://d4.graph.sample"));
-       
+       */
      
       /*  involvedEndp.add(new Endpoint("http://10.196.2.224:3037/lsr/query", "http://d4.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3041/hgnc/query","http://d3.graph.sample"));
@@ -87,7 +90,21 @@ public class StartTopK implements Serializable {
         //involvedEndp.add(new Endpoint("http://10.196.2.224:3032/omim/query","http://d3.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3046/affymetrix/query","http://d3.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3042/bioportal/query", "http://d1.graph.sample"));
-*/
+
+       /*
+       involvedEndp.add(new Endpoint("http://localhost:3022/disease/query","http://d1.graph.sample"));
+        
+        involvedEndp.add(new Endpoint("http://localhost:3021/phenotype/query", "http://d1.graph.sample"));
+      
+        involvedEndp.add(new Endpoint("http://localhost:3020/do/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3023/hpo/query", "http://d1.graph.sample"));
+        
+        involvedEndp.add(new Endpoint("http://localhost:3024/gene/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3025/protein/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3026/variant/query", "http://d1.graph.sample"));
+        involvedEndp.add(new Endpoint("http://localhost:3027/panther/query", "http://d1.graph.sample"));
+        */
+       
        
         involvedEndp.add(new Endpoint("http://10.196.2.224:3022/disease/query","http://d1.graph.sample"));
         
@@ -101,7 +118,7 @@ public class StartTopK implements Serializable {
         involvedEndp.add(new Endpoint("http://10.196.2.224:3026/variant/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3027/panther/query", "http://d1.graph.sample"));
         
-       
+        
   /*    involvedEndp.add(new Endpoint("http://10.196.2.224:3001/disease/query", "http://d4.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3002/do/query","http://d3.graph.sample"));
         //involvedEndp.add(new Endpoint("http://10.196.2.224:3003/gene/query","http://d3.graph.sample"));
@@ -116,8 +133,8 @@ public class StartTopK implements Serializable {
         //involvedEndp.add(new Endpoint("http://10.196.2.224:3013/variant/query", "http://d1.graph.sample"));
 */
         
-      // String source="http://node-F";
-      // String target= "http://node-E";
+   //    String source="http://node-F";
+    //   String target= "http://node-E";
         
         
     
@@ -264,15 +281,14 @@ public class StartTopK implements Serializable {
  // String source="http://identifiers.org/dbsnp/rs769022521"; 
    //String target="http://identifiers.org/ncbigene/10128";
         
+        // used in paper
+     // String source="http://identifiers.org/dbsnp/rs769022521"; 
+       // String target="http://identifiers.org/uniprot/P42704";
         
-      String source="http://identifiers.org/dbsnp/rs769022521"; 
-        String target="http://identifiers.org/uniprot/P42704";
-        
-        
-     /* (14)
-      * works for variant and gene (2 hops) (not used in paper)
-      * String source="http://identifiers.org/dbsnp/rs769022521"; 
-     String target="http://monarchinitiative.org/gene/NCBIGene:10128";*/
+       
+       
+   // String source="http://identifiers.org/dbsnp/rs769022521"; 
+     //String target="http://monarchinitiative.org/gene/NCBIGene:10128";
         
         
        /* (15)
@@ -291,8 +307,8 @@ public class StartTopK implements Serializable {
        String target="http://rdf.disgenet.org/v5.0.0/void/pantherClass";*/
         
         // not used in paper
-      //  String source="http://purl.obolibrary.org/obo/HP_0000193"; 
-      //  String target="http://linkedlifedata.com/resource/umls/id/C0266122";
+      String source="http://purl.obolibrary.org/obo/HP_0000193"; 
+        String target="http://linkedlifedata.com/resource/umls/id/C0266122";
         
         
         	
@@ -352,6 +368,7 @@ public class StartTopK implements Serializable {
 			}
 		}
 		
+	
 		  long end=System.currentTimeMillis();
 		     
 		  System.out.println(end-start);

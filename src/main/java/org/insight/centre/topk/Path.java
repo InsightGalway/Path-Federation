@@ -1,10 +1,11 @@
+package org.insight.centre.topk;
 
 
 
 import java.util.*;
 
 public class Path<V,E>  {
-    protected ArrayList<V> vertSeq;
+    public ArrayList<V> vertSeq;
     protected int hash = 0;
 
     protected ArrayList<E> edgeSeq = null;
