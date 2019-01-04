@@ -19,7 +19,7 @@ import org.insight.centre.federation.SourceSelection;
 public class CacheClass implements Serializable{
 
 
-	public static MultimapCache<String, SourceSelection.PathCache> infinispan() throws IOException{
+	public static MultimapCache<Integer, SourceSelection.PathCache> infinispan() throws IOException{
 		  ConfigurationBuilder builder = new ConfigurationBuilder();
 		   builder.persistence()
 		         .passivation(false)
@@ -32,8 +32,8 @@ public class CacheClass implements Serializable{
 		            .location("data/cacheDB")
 		            .async()
 		               .enabled(true)
-		               .threadPoolSize(5)
-		            .singleton()
+		               .threadPoolSize(32)
+		            .singleton().simpleCache()
 		          ;
 		Configuration configuration = builder.build();
 		
@@ -45,7 +45,7 @@ public class CacheClass implements Serializable{
 		
 		// Obtain a multimap cache manager from the regular cache manager
 	      MultimapCacheManager multimapCacheManager = EmbeddedMultimapCacheManagerFactory.from(manager);
-	      MultimapCache<String, SourceSelection.PathCache> multimap = multimapCacheManager.get("CacheStore");
+	      MultimapCache<Integer, SourceSelection.PathCache> multimap = multimapCacheManager.get("CacheStore");
 		return multimap;
 		
 	}

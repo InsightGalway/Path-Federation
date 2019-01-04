@@ -37,7 +37,8 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.riot.system.StreamRDFWriter.WriterRegistry;
 import org.insight.centre.RDFizePaths.PathRDFizer;
 import org.insight.centre.topk.Path;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.apache.jena.shared.uuid.JenaUUID;
 import org.infinispan.Cache;
 import org.infinispan.multimap.api.embedded.MultimapCache;
@@ -49,15 +50,18 @@ public class SourceSelection {
 	 * 
 	 */
 	private static final long serialVersionUID = 7886019565297757368L;
+	
+	static Logger _log= LoggerFactory.getLogger(SourceSelection.class);
+	
 	String sourceNode, targetNoe;
     static Model mdl;
     int K=10;
     
     Map<String, Set<String>> pathWithDatasets;
-    MultimapCache<String, SourceSelection.PathCache> cacheDB;
+    MultimapCache<Integer, SourceSelection.PathCache> cacheDB;
     
 
-    public SourceSelection(Model mdl,String sourceNode, String targetNode, Map<String, Set<String>> pathWithDatasets, MultimapCache<String, PathCache> cacheDB2 ) {
+    public SourceSelection(Model mdl,String sourceNode, String targetNode, Map<String, Set<String>> pathWithDatasets, MultimapCache<Integer, PathCache> cacheDB2 ) {
         this.sourceNode = sourceNode;
         this.targetNoe = targetNode;
         this.pathWithDatasets=pathWithDatasets;
@@ -110,10 +114,12 @@ public class SourceSelection {
                  connectThrougRs=exec.execSelect();
                Set<String> connThr= new HashSet<String>();
                long start= System.currentTimeMillis();
+               System.out.println("iter starts");
                while(connectThrougRs.hasNext()){
             	   connThr.add(connectThrougRs.next().get("?o").toString());
                }
-               
+              
+               System.out.println("connected through size is: ==> " + connThr.size());
                exec.close();
                long end= System.currentTimeMillis();
                
@@ -121,7 +127,8 @@ public class SourceSelection {
                System.out.println("total time for results iteration is: "+ tot); 
                 List < String > pathRetrieved = new ArrayList < > ();
                 targets= new HashSet<>();
-         
+                //System.out.println("cache size is: ==> "+cacheDB.size().get());
+                _log.info("cache size is: ==> {} ",cacheDB.size().get());
                for(String src: Src){
             	  // System.out.println(src);
             	   //check if source does exist in the current dataset
@@ -147,8 +154,11 @@ public class SourceSelection {
                    // pathRetrieved.addAll(getPaths(curDataset, Src, target, 2));
                     try {
                     	
+                    	int curDatasetHash= curDataset.hashCode();
+                    	int srcHash= src.hashCode();
+                    	int targetHash=target.hashCode();
                     	
-                    	if(checkInCache(curDataset,src, target)==true)
+                    	if(checkInCache(curDatasetHash,srcHash, targetHash)==true)
                     		continue;
                  	   
                     	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, K));
@@ -160,10 +170,12 @@ public class SourceSelection {
 						if(lst.isEmpty()){
 						
 
-							PathCache cache=null;cache=new PathCache(src,target,false);
-							System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
-							cacheDB.put(curDataset, cache);
-		               
+							PathCache cache=null;cache=new PathCache(srcHash,targetHash,false);
+						
+							if(checkInCache(curDatasetHash,srcHash, targetHash)==false){
+								//System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
+								cacheDB.put(curDatasetHash, cache);
+							}
 						}
 						
 					} catch (Exception e) {
@@ -193,13 +205,20 @@ public class SourceSelection {
                 curDataset = nextDataset;
                 //Src = !targets.isEmpty()?targets:Src;
                 Src = targets;
+                
+                _log.info("nex data set is: ==> {} ",curDataset);
+                _log.info("target became source for above dataset and size is: {}  ",Src.size());
             } else {
 
             	List < String > pathRetrieved = new ArrayList < > ();
                 target = this.targetNoe; // original target
                for(String src: Src) { 
   
-            	if(checkInCache(curDataset,src, target)==true)
+            	int curDatasetHash= curDataset.hashCode();
+               	int srcHash= src.hashCode();
+               	int targetHash=target.hashCode();
+               	
+            	if(checkInCache(curDatasetHash,srcHash, targetHash)==true)
                		continue;
             	
             	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, K));
@@ -208,14 +227,16 @@ public class SourceSelection {
             	pathRetrieved.addAll(lst);
 				
             	if(lst.isEmpty()){
-    				PathCache cache=null;cache=new PathCache(src,target,false);
-    				System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
-    				cacheDB.put(curDataset, cache);
+    				PathCache cache=null;cache=new PathCache(srcHash,targetHash,false);
+    				if(checkInCache(curDatasetHash,srcHash, targetHash)==false){
+						//System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
+						cacheDB.put(curDatasetHash, cache);
+					}
                	}
 				
 
                }
- 
+               _log.info("cache size is after last dataset in current datasets paths: ==> {} ",cacheDB.size().get());
                if (!pathRetrieved.isEmpty()) {
                     List < PathMerger > lst = new ArrayList < > ();
                     LinkedList < String > set = new LinkedList < > (map.keySet());
@@ -233,14 +254,14 @@ public class SourceSelection {
 
             count++;
         }
-
+System.out.println("cache size after one complete path iteration: ==> "+cacheDB.size().get());
         buildPath(map);
 pool.shutdown();
         return null;
 
     }
 	boolean ifExisted=false;
-    private boolean avoidDuplicatesInCache(String key, PathCache value){
+/*    private boolean avoidDuplicatesInCache(String key, PathCache value){
    
     	ifExisted=false;
     	if (cacheDB.containsKey(key) != null) {
@@ -261,8 +282,8 @@ System.err.println("for key "+ values.size());
     }
     	
     	return ifExisted;
-    }
-    private boolean checkInCache (String Key, String src, String target){
+    }*/
+    private boolean checkInCache (int Key, int src, int target){
     	//System.err.println("dataset is: "+Key+"  "+src+"--"+target);
     	boolean boolVal = false;
     	
@@ -275,7 +296,7 @@ System.err.println("for key "+ values.size());
 				for (PathCache cach : existingDataset) {
 
 					//System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
-					if(cach.src.equals(src) && cach.target.equals(target) && cach.passOrFail==false){
+					if(cach.src==src && cach.target==target && cach.passOrFail==false){
 						boolVal= true;
 						System.err.println("true");
 						break;
@@ -373,7 +394,7 @@ System.err.println("for key "+ values.size());
     	ResultSet rs=null;
     	 //String queryStr= "prefix feds: <http://vocab.org.centre.insight/feds#> Select distinct ?o where{ <"+curDataset+"> feds:connectedTo <"+nextDataset+">. <"+nextDataset+">  feds:connectedThrough  ?o}";
     	 
-    	 String queryStr = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE {  <"+curDataset+"> feds:connectedThrough ?o. <"+nextDataset+"> feds:connectedThrough ?o. }";
+    	 String queryStr = "prefix feds: <http://vocab.org.centre.insight/feds#> SELECT distinct ?o WHERE {  ?o feds:isCommonIn <"+curDataset+">; feds:isCommonIn <"+nextDataset+">}";
     	 query=QueryFactory.create(queryStr);
     	 qryExec = QueryExecutionFactory.create(query, mdl);
     	// rs= qryExec.execSelect();
@@ -386,10 +407,7 @@ System.err.println("for key "+ values.size());
     private void buildPath(Map < String, List < PathMerger >> map) throws IOException {
 
     	/* datasets involved in the contribution of a complete path*/
-    	List<String> dtsContributed= new ArrayList<>();
-    	
-    	Set<String> curPathLst1stDataset= new HashSet<>();
-    	Set<String> curPathLst2ndDataset= new HashSet<>();
+
     	Map<String, String> pPaths= new HashMap<>();
     	Set<String> dataset= new HashSet<>();
     	
@@ -693,10 +711,10 @@ System.err.println("for key "+ values.size());
 		 */
 		private static final long serialVersionUID = 8011637879899586076L;
 		
-		 String src, target;
+		 int src, target;
     	 boolean passOrFail;
     	
-    	public PathCache(String src, String target, boolean bool) {
+    	public PathCache(int src, int target, boolean bool) {
     		this.src=src; this.target=target;this.passOrFail=bool;
     	}
     	

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:infinispan:config:6.0 http://www.infinispan.org/schemas/infinispan-config-6.0.xsd">
+<namedCache name="CacheStore">
+      <persistence passivation="false">
+         <singleFile fetchPersistentState="true" 
+                     ignoreModifications="false"
+                     purgeOnStartup="false" 
+                     shared="false"
+                     preload="false"
+                     location="."
+                     maxEntries="100"
+                >
+            <async enabled="true" 
+    	           threadPoolSize="500"
+    	           flushLockTimeout="1"
+	           modificationQueueSize="1024"
+	           shutdownTimeout="25000"/>
+        </singleFile>
+      </persistence>
+ </namedCache>
+
+</infinispan>

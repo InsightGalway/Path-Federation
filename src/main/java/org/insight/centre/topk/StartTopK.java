@@ -62,9 +62,9 @@ public class StartTopK implements Serializable {
     @SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException, NotFoundException, InterruptedException, ExecutionException {
 	            
-    	MultimapCache<String, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
+    	MultimapCache<Integer, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
     	
-    	InputStream in= FileManager.get().open("data/index-2-disgenet-complete.nt");
+    	InputStream in= FileManager.get().open("data/index-2.nt");
     	mainModel.read(in,null,"N-TRIPLE");
     	
     	
@@ -379,9 +379,19 @@ public class StartTopK implements Serializable {
     protected static Model mdlEndpConnectedTo(String s, String t){
     	
     	  Model modelTemp= ModelFactory.createDefaultModel();
-         // InputStream in= FileManager.get().open("data/index-2.nt");
-     
-         // modelTemp.read(in,null,"N-TRIPLE");
+    	  
+    	  String query1= "prefix feds: <http://vocab.org.centre.insight/feds#>"
+    	    	 		+ "CONSTRUCT {?d1 feds:hasConnection ?con. ?con feds:hasTargetDataset ?d2}"
+    	    	 		+ "  WHERE {"
+    	    	 		+ "  {  SELECT DISTINCT ?d1 ?con ?d2"
+    	    	 		+ " where {?d1  feds:hasConnection ?con."
+    	    	 		+ " ?con  feds:hasTargetDataset ?d2."
+    	    	 		+ "?con feds:hasCommonNode ?node."
+    	    	 		//+ "    Filter (?d1=<http://localhost:3040/d1/query> && ?d2=<http://localhost:3041/d2/query>)"
+    	    	 		+ "}"
+    	    	 		+ "}"
+    	    	 		+ "}";
+
           
           String query= "prefix feds: <http://vocab.org.centre.insight/feds#> CONSTRUCT {?s feds:connectedTo ?o} WHERE {?s feds:connectedTo ?o}";
           QueryExecution qryExec = QueryExecutionFactory.create(query, mainModel);
