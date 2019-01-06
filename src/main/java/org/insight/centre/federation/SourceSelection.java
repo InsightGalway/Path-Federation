@@ -25,11 +25,13 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.jena.query.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
+import org.apache.jena.query.QueryParseException;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdf.model.Model;
@@ -119,23 +121,39 @@ public class SourceSelection {
             	   connThr.add(connectThrougRs.next().get("?o").toString());
                }
               
-               System.out.println("connected through size is: ==> " + connThr.size());
+               _log.info("connected throhg size is {}", connThr.size());
                exec.close();
                long end= System.currentTimeMillis();
                
                long tot= end-start;
-               System.out.println("total time for results iteration is: "+ tot); 
+               _log.info("iteratin time for resultset is {} ", tot); 
                 List < String > pathRetrieved = new ArrayList < > ();
                 targets= new HashSet<>();
                 //System.out.println("cache size is: ==> "+cacheDB.size().get());
                 _log.info("cache size is: ==> {} ",cacheDB.size().get());
+                _log.info("source size is {} before connected throhg", Src.size());
+                _log.info("before filter src size is: {}", Src.size());
+                
+                Set<String> afterFilter= null;
+                afterFilter=checkIfExist (Src, nextDataset);               	
+                
+                _log.info("before filter src size is: {}", afterFilter.size());
+                  
+                Src=afterFilter;
+                  _log.info("nex data set is: ==> {} ",curDataset);
+                  _log.info("target became source for above dataset and size is: {}  ",Src.size());
+                  
                for(String src: Src){
             	  // System.out.println(src);
             	   //check if source does exist in the current dataset
             	   // if doesnt, no need to make any request since no benefit of connectedThrough
-          if(checkIfExist (src, curDataset)){	   
+            	   int ii=0;
+         // if(checkIfExist (src, curDataset)){	   
             	//while(connectThrougRs.hasNext()){
+            	  
             	for (String common: connThr) {
+         
+            		
                     target = common;;
                     targets.add(target); // add each target to a targets List
                                         
@@ -157,10 +175,10 @@ public class SourceSelection {
                     	int curDatasetHash= curDataset.hashCode();
                     	int srcHash= src.hashCode();
                     	int targetHash=target.hashCode();
-                    	
+                    	System.err.println(ii++);
                     	if(checkInCache(curDatasetHash,srcHash, targetHash)==true)
                     		continue;
-                 	   
+                    
                     	Future<List<String>> future= pool.submit(new PathRequest(curDataset, src, target, K));
                     	
                     	List<String> lst = future.get();
@@ -171,12 +189,8 @@ public class SourceSelection {
 						
 
 							PathCache cache=null;cache=new PathCache(srcHash,targetHash,false);
-						
-							if(checkInCache(curDatasetHash,srcHash, targetHash)==false){
-								//System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
 								cacheDB.put(curDatasetHash, cache);
 							}
-						}
 						
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
@@ -187,7 +201,7 @@ public class SourceSelection {
                   
                   
                 } // end of connectedThrough while loop 
-              } else{continue;}
+             // } else{continue;}
             } // end of Src loop
 
                if (!pathRetrieved.isEmpty()) {
@@ -206,12 +220,12 @@ public class SourceSelection {
                 //Src = !targets.isEmpty()?targets:Src;
                 Src = targets;
                 
-                _log.info("nex data set is: ==> {} ",curDataset);
-                _log.info("target became source for above dataset and size is: {}  ",Src.size());
+               
             } else {
 
             	List < String > pathRetrieved = new ArrayList < > ();
                 target = this.targetNoe; // original target
+                _log.info("source size is {} in last dataset", Src.size());
                for(String src: Src) { 
   
             	int curDatasetHash= curDataset.hashCode();
@@ -228,10 +242,10 @@ public class SourceSelection {
 				
             	if(lst.isEmpty()){
     				PathCache cache=null;cache=new PathCache(srcHash,targetHash,false);
-    				if(checkInCache(curDatasetHash,srcHash, targetHash)==false){
+    		
 						//System.out.println("new dataset is: "+curDataset+"  "+cache.src+"--"+cache.target+"--"+cache.passOrFail);
 						cacheDB.put(curDatasetHash, cache);
-					}
+					
                	}
 				
 
@@ -260,6 +274,9 @@ pool.shutdown();
         return null;
 
     }
+    
+    
+    
 	boolean ifExisted=false;
 /*    private boolean avoidDuplicatesInCache(String key, PathCache value){
    
@@ -287,31 +304,38 @@ System.err.println("for key "+ values.size());
     	//System.err.println("dataset is: "+Key+"  "+src+"--"+target);
     	boolean boolVal = false;
     	
-		if (cacheDB.containsKey(Key) != null) {	
-			 CompletableFuture<Collection<PathCache>> datasetAsKey = cacheDB.get(Key);
-			 
+		//if (cacheDB.containsKey(Key) != null) {	
+    	 long start = System.currentTimeMillis();
+		 CompletableFuture<Collection<PathCache>> datasetAsKey = cacheDB.get(Key);
+			 long end = System.currentTimeMillis();
+			// _log.info("loop time {}", end-start);
+			 System.out.println("cache get get time :"+ (end-start));
 			 Collection<PathCache> existingDataset;
 			try {
 				existingDataset = datasetAsKey.get();
+				
+			
 				for (PathCache cach : existingDataset) {
 
-					//System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
+				//	System.out.println("dataset is: "+Key+"  "+cach.src+"--"+cach.target+"--"+cach.passOrFail);
 					if(cach.src==src && cach.target==target && cach.passOrFail==false){
 						boolVal= true;
-						System.err.println("true");
+						//System.err.println("true");
 						break;
 					}
 			}
+				
+				
 			} catch (InterruptedException | ExecutionException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
 	
-		} else {
+		/*} else {
 			
 			boolVal= false;
-		}
+		}*/
     	
 		return boolVal;
     }
@@ -329,11 +353,11 @@ System.err.println("for key "+ values.size());
         return new RmoteQuery().FederateRequest(curDataset, src, target, k);
     }
 
-    protected boolean checkIfExist(String node, String endpoint){
-    /*	String qryASK = "ASK WHERE{?s ?p ?o "
+    protected Set<String> checkIfExist(Set<String> src, String endpoint){
+ /*   	String qryASK = "ASK WHERE{?s ?p ?o "
     			+ "Filter(?s = <%subj> || ?o= <%obj> ) "
     			+ "}";
-    	qryASK=qryASK.replace("%subj", node).replace("%obj", node);*/
+    	qryASK=qryASK.replace("%subj", node).replace("%obj", node);
      	
     	//Query query = QueryFactory.create(qryASK);
     	
@@ -350,8 +374,54 @@ System.err.println("for key "+ values.size());
     	}else{
     	 
     	return false; 
-    	}
+    	}*/
     	
+    	Set<String> filteredNodes= new HashSet<>();
+    	
+    	ExecutorService ex = Executors.newFixedThreadPool(20);
+    	for (String subObjSource : src) {
+	        ex.submit(new Runnable() {
+	            @Override
+	            public void run() {
+	            	String qryASK1 = "ASK WHERE{?s ?p ?o "
+	            			+ "Filter(?s = <%subj> || ?o= <%obj> ) "
+	            			+ "}";
+	            	
+	            	String qryASK = "Select * WHERE{?s ?p ?o "
+	            			+ "Filter(?s = <%subj> || ?o= <%obj> ) "
+	            			+ "} limit 1";
+	            	
+	                try {
+	                	QueryExecution exec=null;
+	            		Query qry= null;
+	            		
+	            			
+	            		String ASK=qryASK.replace("%subj", subObjSource).replace("%obj",subObjSource);
+	            		//System.err.println("endp: "+ targetEndp.endpName +"query: = "+ASK);
+	            		qry=QueryFactory.create(ASK);
+	            		 exec= QueryExecutionFactory.sparqlService(endpoint, qry);
+	            		if(exec.execSelect().hasNext()){
+	      
+	            			filteredNodes.add(subObjSource);
+	            			
+	            		}
+	            		exec.close();
+	            		
+	            			
+	            		}catch(QueryParseException e){
+	            			_log.error(e.getMessage());
+	            	
+	            		}
+
+	            }
+	        });
+	    }
+    	ex.shutdown();
+    	 try {
+    	        ex.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+    	    } catch (InterruptedException e) {
+    	    }
+    	return filteredNodes;
     }
     
     
@@ -696,7 +766,7 @@ System.err.println("for key "+ values.size());
 
 		@Override
 		public List<String> call() throws Exception {
-			Thread.sleep(5);
+			
 			return getPaths(this.curDataset, this.src, this.target,this.topK);
 		}
 

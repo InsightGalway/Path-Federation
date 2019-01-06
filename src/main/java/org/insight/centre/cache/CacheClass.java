@@ -7,7 +7,9 @@ import java.util.List;
 import org.infinispan.Cache;
 import org.infinispan.configuration.cache.Configuration;
 import org.infinispan.configuration.cache.ConfigurationBuilder;
+import org.infinispan.configuration.cache.StorageType;
 import org.infinispan.eviction.EvictionStrategy;
+import org.infinispan.eviction.EvictionType;
 import org.infinispan.manager.DefaultCacheManager;
 import org.infinispan.manager.EmbeddedCacheManager;
 import org.infinispan.multimap.api.embedded.EmbeddedMultimapCacheManagerFactory;
@@ -21,7 +23,10 @@ public class CacheClass implements Serializable{
 
 	public static MultimapCache<Integer, SourceSelection.PathCache> infinispan() throws IOException{
 		  ConfigurationBuilder builder = new ConfigurationBuilder();
-		   builder.persistence()
+		   builder
+		        .memory().storageType(StorageType.OBJECT)
+		        .evictionType(EvictionType.COUNT).size(1_00)
+		   		.persistence()
 		         .passivation(false)
 		         .addSingleFileStore()
 		            .preload(true)
@@ -32,8 +37,9 @@ public class CacheClass implements Serializable{
 		            .location("data/cacheDB")
 		            .async()
 		               .enabled(true)
-		               .threadPoolSize(32)
+		               .threadPoolSize(100)
 		            .singleton().simpleCache()
+		            
 		          ;
 		Configuration configuration = builder.build();
 		

@@ -64,6 +64,9 @@ public class StartTopK implements Serializable {
 	            
     	MultimapCache<Integer, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
     	
+    
+    	
+    	
     	InputStream in= FileManager.get().open("data/index-2.nt");
     	mainModel.read(in,null,"N-TRIPLE");
     	
@@ -362,6 +365,7 @@ public class StartTopK implements Serializable {
 				
 				for (Path p : results) {
 					//System.out.println(p);
+					_log.info("dataset path to traverse is {} ", p);
 					new SourceSelection(mainModel,source, target,pathWithDatasets, cacheDB).startSourceSelection(p);
 				}
 				
@@ -458,7 +462,7 @@ public void setFlagConnVia(boolean flagConnVia) {
         boolean doCheck = false;
           
         //Task 1
-        testcases.put("sample", "20,"+sourceInp+","+targetInp+",no");
+        testcases.put("sample", "5,"+sourceInp+","+targetInp+",no");
   //    testcases.put("omim_q1", "2,http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00157,http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00396,no");
     //  testcases.put("pharmgkb_q1","2,http://bio2rdf.org/drugbank:BE0003380,http://bio2rdf.org/genatlas:TP53,no");
       
