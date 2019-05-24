@@ -17,11 +17,13 @@ import org.infinispan.multimap.api.embedded.MultimapCache;
 import org.infinispan.multimap.api.embedded.MultimapCacheManager;
 import org.insight.centre.federation.SourceSelection;
 
+import insight.dev.flushablemap.PathCache;
+
 
 public class CacheClass implements Serializable{
 
 
-	public static MultimapCache<Integer, SourceSelection.PathCache> infinispan() throws IOException{
+	public static MultimapCache<Integer, PathCache> infinispan() throws IOException{
 		  ConfigurationBuilder builder = new ConfigurationBuilder();
 		   builder
 		        .memory().storageType(StorageType.OBJECT)
@@ -51,7 +53,7 @@ public class CacheClass implements Serializable{
 		
 		// Obtain a multimap cache manager from the regular cache manager
 	      MultimapCacheManager multimapCacheManager = EmbeddedMultimapCacheManagerFactory.from(manager);
-	      MultimapCache<Integer, SourceSelection.PathCache> multimap = multimapCacheManager.get("CacheStore");
+	      MultimapCache<Integer, PathCache> multimap = multimapCacheManager.get("CacheStore");
 		return multimap;
 		
 	}

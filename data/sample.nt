@@ -1,4 +1,142 @@
-<http://dbpedia.org/resource/a> <http://dbpedia.org/resource/knows> <http://dbpedia.org/resource/c> .
-<http://dbpedia.org/resource/c> <http://dbpedia.org/resource/knows> <http://dbpedia.org/resource/b> .
-<http://dbpedia.org/resource/a> <http://dbpedia.org/resource/knows> <http://dbpedia.org/resource/b> .
+<http://linkedlifedata.com/resource/umls/id/C0003486> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C0003486> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://linkedlifedata.com/resource/umls/id/C0002902> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+
+<http://purl.obolibrary.org/obo/HP_0001626> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://purl.obolibrary.org/obo/HP_0001626> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query>  .
+<http://purl.obolibrary.org/obo/HP_0001626> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+
+<http://linkedlifedata.com/resource/umls/id/C0007222> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query>.
+<http://linkedlifedata.com/resource/umls/id/C0007222> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://linkedlifedata.com/resource/umls/id/C0007222> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+
+<http://identifiers.org/doid/DOID:7> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query>.
+<http://identifiers.org/doid/DOID:7> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3020/do/query> .
+
+
+<http://linkedlifedata.com/resource/umls/id/C0033581> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C0033581> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://purl.obolibrary.org/obo/HP_0000119> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query>.
+<http://purl.obolibrary.org/obo/HP_0000119> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://purl.obolibrary.org/obo/HP_0000119> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+
+<http://purl.obolibrary.org/obo/HP_0000024> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query>.
+<http://purl.obolibrary.org/obo/HP_0000024> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query>.
+
+
+<http://purl.obolibrary.org/obo/HP_0000818> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://purl.obolibrary.org/obo/HP_0000818> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://purl.obolibrary.org/obo/HP_0000818> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+<http://purl.obolibrary.org/obo/HP_0000818> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+
+<http://linkedlifedata.com/resource/umls/id/C4025823> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C4025823> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://linkedlifedata.com/resource/umls/id/C4025823> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+
+
+<http://linkedlifedata.com/resource/umls/id/C0014130> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C0014130> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://linkedlifedata.com/resource/umls/id/C0266122> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C0266122> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://linkedlifedata.com/resource/umls/id/C0243050> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3022/disease/query> .
+<http://linkedlifedata.com/resource/umls/id/C0243050> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://linkedlifedata.com/resource/umls/id/C0243050> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+
+<http://purl.obolibrary.org/obo/HP_0004942> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://semanticscience.org/resource/SIO_000275> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://semanticscience.org/resource/SIO_000275> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3023/hpo/query> .
+<http://semanticscience.org/resource/SIO_000275> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://semanticscience.org/resource/SIO_000275> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3020/do/query> .
+
+<http://purl.obolibrary.org/obo/HP_0001405> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://identifiers.org/hp/HP:0001405> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://linkedlifedata.com/resource/umls/id/C0010308> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+<http://purl.obolibrary.org/obo/HP_0000193> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3021/phenotype/query> .
+
+<http://identifiers.org/doid/DOID:0014667> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3020/do/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00171> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00171> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00220> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00220> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00197>  <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00197> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00227> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00227> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00137> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00137> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+<http://rdf.disgenet.org/resource/panther.classification/PC00171> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3027/panther/query> .
+<http://rdf.disgenet.org/resource/panther.classification/PC00171> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+
+
+<http://identifiers.org/uniprot/P42704>  <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3025/protein/query> .
+<http://identifiers.org/uniprot/P42704>  <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3024/gene/query> .
+
+<http://identifiers.org/dbsnp/rs769022521> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3026/variant/query> .
+
+<http://identifiers.org/ncbigene/10128> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3024/gene/query> .
+<http://identifiers.org/ncbigene/10128> <http://vocab.org.centre.insight/feds#isCommonIn> <http://localhost:3026/variant/query> .
+
+<http://localhost:3024/gene/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3025/protein/query> .
+<http://localhost:3024/gene/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3026/variant/query> .
+<http://localhost:3024/gene/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3027/panther/query> .
+
+<http://localhost:3026/variant/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3024/gene/query> .
+<http://localhost:3026/variant/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3025/protein/query> .
+<http://localhost:3026/variant/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3027/panther/query> .
+
+<http://localhost:3025/protein/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3024/gene/query> .
+<http://localhost:3025/protein/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3026/variant/query> .
+<http://localhost:3025/protein/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3027/panther/query> .
+
+<http://localhost:3027/panther/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3024/gene/query> .
+<http://localhost:3027/panther/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3025/protein/query> .
+<http://localhost:3027/panther/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3026/variant/query> .
+
+<http://localhost:3020/do/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3022/disease/query> .
+<http://localhost:3020/do/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3023/hpo/query> .
+<http://localhost:3020/do/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3021/phenotype/query> .
+
+<http://localhost:3023/hpo/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3021/phenotype/query> .
+<http://localhost:3023/hpo/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3022/disease/query> .
+<http://localhost:3023/hpo/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3020/do/query> .
+
+<http://localhost:3021/phenotype/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3023/hpo/query> .
+<http://localhost:3021/phenotype/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3022/disease/query> .
+<http://localhost:3021/phenotype/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3020/do/query> .
+
+<http://localhost:3022/disease/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3020/do/query> .
+<http://localhost:3022/disease/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3021/phenotype/query> .
+<http://localhost:3022/disease/query> <http://vocab.org.centre.insight/feds#connectedTo> <http://localhost:3023/hpo/query> .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
