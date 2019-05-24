@@ -31,6 +31,7 @@ import org.infinispan.manager.DefaultCacheManager;
 import org.infinispan.multimap.api.embedded.MultimapCache;
 import org.insight.centre.cache.CacheClass;
 import org.insight.centre.cache.PathCache1;
+import org.insight.centre.federation.SendQueryInChunks;
 import org.insight.centre.federation.SourceSelection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,6 +44,7 @@ import com.hp.hpl.jena.tdb.TDBFactory;
 import com.hp.hpl.jena.tdb.base.file.Location;
 import com.hp.hpl.jena.util.FileManager;
 
+import insight.dev.flushablemap.*;
 
 
 public class StartTopK implements Serializable {
@@ -56,18 +58,19 @@ public class StartTopK implements Serializable {
 	static boolean backword=false, forward=true;
 	
 	static Model mainModel= ModelFactory.createDefaultModel();
-
+    static String cacheLocation = "data/cacheTestTest/";
 	
 	boolean  flagConnVia;
     @SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException, NotFoundException, InterruptedException, ExecutionException {
 	            
-    	MultimapCache<Integer, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
+    	//MultimapCache<Integer, SourceSelection.PathCache> cacheDB=CacheClass.infinispan();
+    	SyncableMap<Integer, PathCache> cacheDB = new SyncableMap<Integer, PathCache>();
+    	                                cacheDB.setSerialiseFactory(PathCacheSerializationFactory.instance);  
+       	                                cacheDB.load(cacheLocation);
+    //	System.out.println(cacheDB.getValue(698547532).size());
     	
-    
-    	
-    	
-    	InputStream in= FileManager.get().open("data/index-2.nt");
+    	InputStream in= FileManager.get().open("data/updatedindex.nt");
     	mainModel.read(in,null,"N-TRIPLE");
     	
     	
@@ -78,11 +81,11 @@ public class StartTopK implements Serializable {
        
         List<Endpoint> involvedEndp= new ArrayList<>();
        
-   /*  involvedEndp.add(new Endpoint("http://localhost:3040/d1/query", "http://d1.graph.sample"));
+    /*    involvedEndp.add(new Endpoint("http://localhost:3040/d1/query", "http://d1.graph.sample"));
         involvedEndp.add( new Endpoint("http://localhost:3041/d2/query","http://d2.graph.sample"));
         involvedEndp.add(new Endpoint("http://localhost:3042/d3/query","http://d3.graph.sample"));
        // involvedEndp.add(new Endpoint("http://localhost:3043/d4/query", "http://d4.graph.sample"));
-       */
+*/      
      
       /*  involvedEndp.add(new Endpoint("http://10.196.2.224:3037/lsr/query", "http://d4.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3041/hgnc/query","http://d3.graph.sample"));
@@ -94,7 +97,8 @@ public class StartTopK implements Serializable {
         involvedEndp.add(new Endpoint("http://10.196.2.224:3046/affymetrix/query","http://d3.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3042/bioportal/query", "http://d1.graph.sample"));
 
-       /*
+       */
+        
        involvedEndp.add(new Endpoint("http://localhost:3022/disease/query","http://d1.graph.sample"));
         
         involvedEndp.add(new Endpoint("http://localhost:3021/phenotype/query", "http://d1.graph.sample"));
@@ -106,10 +110,10 @@ public class StartTopK implements Serializable {
         involvedEndp.add(new Endpoint("http://localhost:3025/protein/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://localhost:3026/variant/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://localhost:3027/panther/query", "http://d1.graph.sample"));
-        */
+        
        
-       
-        involvedEndp.add(new Endpoint("http://10.196.2.224:3022/disease/query","http://d1.graph.sample"));
+    
+      /* involvedEndp.add(new Endpoint("http://10.196.2.224:3022/disease/query","http://d1.graph.sample"));
         
         involvedEndp.add(new Endpoint("http://10.196.2.224:3021/phenotype/query", "http://d1.graph.sample"));
       
@@ -119,8 +123,8 @@ public class StartTopK implements Serializable {
         involvedEndp.add(new Endpoint("http://10.196.2.224:3024/gene/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3025/protein/query", "http://d1.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3026/variant/query", "http://d1.graph.sample"));
-        involvedEndp.add(new Endpoint("http://10.196.2.224:3027/panther/query", "http://d1.graph.sample"));
-        
+        involvedEndp.add(new Endpoint("http://10.196.2.224:3027/panther/query", "http://d1.graph.sample"));*/
+      
         
   /*    involvedEndp.add(new Endpoint("http://10.196.2.224:3001/disease/query", "http://d4.graph.sample"));
         involvedEndp.add(new Endpoint("http://10.196.2.224:3002/do/query","http://d3.graph.sample"));
@@ -136,8 +140,8 @@ public class StartTopK implements Serializable {
         //involvedEndp.add(new Endpoint("http://10.196.2.224:3013/variant/query", "http://d1.graph.sample"));
 */
         
-   //    String source="http://node-F";
-    //   String target= "http://node-E";
+  //  String source="http://node-F";
+  //  String target= "http://node-E";
         
         
     
@@ -218,100 +222,139 @@ public class StartTopK implements Serializable {
         
         //-------------
      
-      //  String source="http://purl.obolibrary.org/obo/HP_0000818"; 
-      //  String target= "http://semanticscience.org/resource/SIO_000275";
+        //(1)
+    
+     //  String source="http://purl.obolibrary.org/obo/HP_0000818"; 
+      // String target= "http://semanticscience.org/resource/SIO_000275";
        
+        //(2)
+    //	String source="http://purl.obolibrary.org/obo/HP_0004942"; 
+      //String target="http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0001626";
             
+     // (3)
+     //    String source="http://purl.obolibrary.org/obo/HP_0004942"; 
+      //String target="http://bioportal.bioontology.org/ontologies/DOID/DOID:7";
+        
+        // (4)
+
+       //  String source="http://identifiers.org/doid/DOID:0014667"; 
+        //String target="http://semanticscience.org/resource/SIO_000275";
+        
+        //(5)
+       //String source="http://identifiers.org/dbsnp/rs769022521"; 
+        //String target="http://identifiers.org/ncbigene/10128";
+        
+        
+        //(6)
+        
+    //     String source="http://purl.obolibrary.org/obo/HP_0004942"; 
+     //  String target="http://rdf.disgenet.org/v5.0.0/void/doClass";
+        
+        // (7)
+        // String source="http://linkedlifedata.com/resource/umls/id/C0033581"; 
+       //  String target="http://purl.obolibrary.org/obo/HP_0000024";
+        
+        //(8)
+       // String source="http://identifiers.org/dbsnp/rs769022521"; 
+      //String target="http://monarchinitiative.org/gene/NCBIGene:10128";
+        
+        // (9)
+        
+      //    String source="http://purl.obolibrary.org/obo/HP_0000818"; 
+       //  String target="http://linkedlifedata.com/resource/phenotype/id/HP:0000818";
+        
+        
+        // (10)
+
+         // String source="http://purl.obolibrary.org/obo/HP_0000818"; 
+         // String target="http://bio2rdf.org/umls:C4025823";
+        
+        //(11)
+       //String source= "http://identifiers.org/dbsnp/rs769022521";
+       //String target= "http://semanticscience.org/resource/SIO_000275";
+        
+        
+        //(12)
+        
+        String source="http://identifiers.org/dbsnp/rs769022521"; 
+        String target="http://rdf.disgenet.org/v5.0.0/void/pantherClass";
+      
+       // (13)
+        
+      //  String source="http://identifiers.org/dbsnp/rs769022521"; 
+      //  String target="http://rdf.disgenet.org/resource/panther.classification/PC00137";
+        
+
+        
+        
+        
+
         
         /*	Doesn't work for single dataset phenotype (if source and target only exists in single dataset, need to check the code)
          * String source="http://purl.obolibrary.org/obo/HP_0001405"; 
         String target= "http://identifiers.org/hp/HP:0001405";*/
-        
+       
+        //(2)
     	//String source="http://purl.obolibrary.org/obo/HP_0004942"; 
-       // String target="http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0001626";
+      //String target="http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0001626";
       
         
       /* (3)
-       * work for three dataset phenotype, disease, hpoclass (3 hops) 
-       * String source="http://purl.obolibrary.org/obo/HP_0004942"; 
-        String target="http://linkedlifedata.com/resource/umls/id/C0007222";*/
+       * work for three dataset phenotype, disease, hpoclass (3 hops) */
+       //String source="http://purl.obolibrary.org/obo/HP_0004942"; 
+       // String target="http://linkedlifedata.com/resource/umls/id/C0007222";
        
       /* (4)
-       * works for three datasets phenotype, disease, doclass (3 hops)
-       *  String source="http://purl.obolibrary.org/obo/HP_0004942"; 
-        String target="http://bioportal.bioontology.org/ontologies/DOID/DOID:7";*/
+       * works for three datasets phenotype, disease, doclass (3 hops)*/
+      //  String source="http://purl.obolibrary.org/obo/HP_0004942"; 
+     //  String target="http://bioportal.bioontology.org/ontologies/DOID/DOID:7";
    
         
-        /* (5)
-         * works for three dataset phenotype, disease, doclass (3 hops)
-         * 
-         * String source="http://purl.obolibrary.org/obo/HP_0004942"; 
-        String target="http://rdf.disgenet.org/v5.0.0/void/doClass";*/
+     
         
         
        /* (6)
-        *  path from singel dataset disease (single hop)
-        * String source="http://linkedlifedata.com/resource/umls/id/C0033581"; 
-        String target="http://purl.obolibrary.org/obo/HP_0000119";*/
+        *  path from singel dataset disease (single hop)*/
+       // String source="http://linkedlifedata.com/resource/umls/id/C0033581"; 
+       // String target="http://purl.obolibrary.org/obo/HP_0000119";
       
         
         
-       /* (7)leave ot for paper same dataset/hop involved as 6) 
-        * work for single dataset disease (single hop)
-        * String source="http://linkedlifedata.com/resource/umls/id/C0033581"; 
-        String target="http://purl.obolibrary.org/obo/HP_0000024";*/
+       
         
         //(8)
       //  String source="http://linkedlifedata.com/resource/umls/id/C0033581"; // through http://purl.obolibrary.org/obo/HP_0000024(prevoius)
-       // String target="http://linkedlifedata.com/resource/phenotype/id/HP:0000024";
+      //  String target="http://linkedlifedata.com/resource/phenotype/id/HP:0000024";
         
         /* (9)
-         * working for single dataset doClass (single hop) (not used in paper)
-         * String source="http://identifiers.org/doid/DOID:0014667"; 
-        String target="http://semanticscience.org/resource/SIO_000275";*/
+         * working for single dataset doClass (single hop) (not used in paper)*/
+        //  String source="http://identifiers.org/doid/DOID:0014667"; 
+       // String target="http://semanticscience.org/resource/SIO_000275";
         
-       /* (10)
-        * single path  from hpo, phenotype, disease (single and 2 hops involved)
-        * String source="http://purl.obolibrary.org/obo/HP_0000818"; 
-        String target="http://linkedlifedata.com/resource/phenotype/id/HP:0000818";*/
+   
         
+  
         
-    /* (11)
-     *  work for 2 datasets disease and phenotype (2 hops) 
-     *  String source="http://purl.obolibrary.org/obo/HP_0000818"; 
-        String target="http://bio2rdf.org/umls:C4025823";*/
-        
- // String source="http://identifiers.org/dbsnp/rs769022521"; 
-   //String target="http://identifiers.org/ncbigene/10128";
+ 
         
         // used in paper
      // String source="http://identifiers.org/dbsnp/rs769022521"; 
-       // String target="http://identifiers.org/uniprot/P42704";
+      //  String target="http://identifiers.org/uniprot/P42704";
         
        
        
-   // String source="http://identifiers.org/dbsnp/rs769022521"; 
-     //String target="http://monarchinitiative.org/gene/NCBIGene:10128";
+  
         
         
-       /* (15)
-        *  work for variant protein and panther (3 hops)
-        * String source="http://identifiers.org/dbsnp/rs769022521"; 
-        String target="http://rdf.disgenet.org/resource/panther.classification/PC00137";*/
+
         
         
-      /* (16)
-       *  work for variant, gene, protien and panther 4 hops
-       *  String source="http://identifiers.org/dbsnp/rs769022521"; 
-        String target="http://semanticscience.org/resource/SIO_000275";*/
-        
-   /* work for variant protien and panther 4 hops  (not used in paper) 
-    *  String source="http://identifiers.org/dbsnp/rs769022521"; 
-       String target="http://rdf.disgenet.org/v5.0.0/void/pantherClass";*/
+   
+
         
         // not used in paper
-      String source="http://purl.obolibrary.org/obo/HP_0000193"; 
-        String target="http://linkedlifedata.com/resource/umls/id/C0266122";
+     //String source="http://purl.obolibrary.org/obo/HP_0000193"; 
+    // String target="http://linkedlifedata.com/resource/umls/id/C0266122";
         
         
         	
@@ -320,8 +363,12 @@ public class StartTopK implements Serializable {
 		for (Endpoint endp : involvedEndp) {
 
 			if (checkEndpoints(source, SUBJECT, endp)) {
-
+				//long start=System.nanoTime();
 				sourceDatasets.add(endp.endpName);
+				// long end=System.nanoTime();
+			     
+				//  System.err.println("source dataset "+(end-start));
+				
 
 			}
 		/*	if (checkEndpoints(source, OBJECT, endp)) {
@@ -330,12 +377,19 @@ public class StartTopK implements Serializable {
 			}*/
 
 			if (checkEndpoints(target, SUBJECT, endp)) {
-
+				//long start=System.nanoTime();
+				
 				targetDatasets.add(endp.endpName);
+				// long end=System.nanoTime();
+			     
+				//  System.out.println("target dataset "+(end-start));
 			}
 			if (checkEndpoints(target, OBJECT, endp)) {
-
+				//long start=System.nanoTime();
 				targetDatasets.add(endp.endpName);
+				 //long end=System.nanoTime();
+			     
+				 // System.out.println("target dataset "+(end-start));
 			}
 
 		}
@@ -343,11 +397,10 @@ public class StartTopK implements Serializable {
 		
 		Map<String, Set<String>> pathWithDatasets= new HashMap<>();
 		
-		
-		
-		   _log.info("source and target");
-	       long start=System.currentTimeMillis();
-		for (String s : sourceDatasets) {
+
+	  long start=System.currentTimeMillis();
+	
+	  for (String s : sourceDatasets) {
 
 		for (String t : targetDatasets) {
 			//System.err.println(t);
@@ -362,20 +415,25 @@ public class StartTopK implements Serializable {
 					results=bfsAlgo(t, s, md,backword);
 					
 				}
-				
+			
 				for (Path p : results) {
 					//System.out.println(p);
-					_log.info("dataset path to traverse is {} ", p);
-					new SourceSelection(mainModel,source, target,pathWithDatasets, cacheDB).startSourceSelection(p);
+					//_log.info("dataset path to traverse is {} ", p);
+					//new SourceSelection(mainModel,source, target,pathWithDatasets, cacheDB).startSourceSelection(p);
+					new SendQueryInChunks(mainModel,source, target,pathWithDatasets, cacheDB).startSourceSelection(p);
 				}
 				
 			}
 		}
-		
+		 long end=System.currentTimeMillis();
+	     
+		  System.out.println("dataset connectivity "+(end-start));
 	
-		  long end=System.currentTimeMillis();
+	/*	 long end=System.currentTimeMillis();
 		     
-		  System.out.println(end-start);
+		  System.out.println(end-start);*/
+		  
+		  cacheDB.sync(cacheLocation);
  
     }
 
@@ -462,7 +520,7 @@ public void setFlagConnVia(boolean flagConnVia) {
         boolean doCheck = false;
           
         //Task 1
-        testcases.put("sample", "5,"+sourceInp+","+targetInp+",no");
+        testcases.put("sample", "20,"+sourceInp+","+targetInp+",no");
   //    testcases.put("omim_q1", "2,http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00157,http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00396,no");
     //  testcases.put("pharmgkb_q1","2,http://bio2rdf.org/drugbank:BE0003380,http://bio2rdf.org/genatlas:TP53,no");
       
